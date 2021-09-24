@@ -67,6 +67,13 @@
 
 /* Стили для меню */
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .menu__header,
 .menu__social,
 .menu__content {
@@ -83,8 +90,8 @@
 }
 
 .menu__header {
-  padding-top: 42px;
-  padding-bottom: 73px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .menu__link {
@@ -124,7 +131,6 @@
 }
 
 .menu__content {
-  padding-top: 15px;
   align-items: flex-start;
 }
 
@@ -135,13 +141,16 @@
 
 .menu__img {
   max-width: 370px;
-  height: 646px !important;
-  /* height: 530px !important; */
+  max-height: 530px !important;
   object-fit: cover;
 }
 
 .menu__item {
   margin-bottom: 28px !important;
+}
+
+.menu__content-item {
+  height: 646px;
 }
 
 .ui-state-default,
@@ -202,10 +211,6 @@ a.ui-button:active,
 
 .accordion__item:last-child {
   margin-bottom: 0;
-}
-
-.accordion {
-  margin-bottom: 110px;
 }
 
 .footer__wrapper {
