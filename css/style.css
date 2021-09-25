@@ -146,11 +146,15 @@
 }
 
 .menu__item {
-  margin-bottom: 28px !important;
+  margin-bottom: 28px;
+}
+
+.menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .menu__content-item {
-  height: 646px;
+  height: 619px;
 }
 
 .ui-state-default,
@@ -193,7 +197,6 @@ a.ui-button:active,
   font-size: 32px !important;
   line-height: 42px !important;
   letter-spacing: 0.03em !important;
-  color: var(--text-color);
 }
 
 .accordion__list {
@@ -232,6 +235,38 @@ a.ui-button:active,
 .menu__footer__link:nth-child(2) {
   text-decoration: underline;
   margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  .menu__list {
+    max-width: 615px;
+  }
+
+  .menu__item {
+    margin-bottom: 20px;
+  }
+
+  .menu__heading {
+    font-size: 26px !important;
+    line-height: 32px !important;
+  }
+
+  .menu__img {
+    width: 250px;
+    height: 320px;
+  }
+
+  .menu__content-item {
+    height: 478px;
+  }
+
+  .accordion__item {
+    margin-bottom: 10px;
+  }
+
+  .accordion__list {
+    padding: 20px 0 0 0;
+  }
 }
 
 /* Стили для Статей */
