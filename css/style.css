@@ -352,6 +352,9 @@ a.ui-button:active,
 }
 
 .swiper__link {
+  border: none;
+  background-color: inherit;
+  border-radius: 10px;
   display: flex;
   width: 144px;
   margin: 0 auto;
@@ -401,4 +404,17 @@ a.ui-button:active,
   left: 115px;
   top: 25px;
   transform: rotate(90deg);
+}
+
+.swipe-item-active {
+  transition: border 300ms ease-in-out;
+  opacity: .5;
+}
+
+.swipe-content-active {
+  display: none;
+}
+
+.article__block {
+  display: block;
 }
