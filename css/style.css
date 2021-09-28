@@ -221,7 +221,7 @@ header {
 }
 
 .header_search::after {
-  content: url(./img/search.svg);
+  content: url(../img/search.svg);
   position: absolute;
   right: 22px;
   top: 8px;
