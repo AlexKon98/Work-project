@@ -1441,9 +1441,8 @@ a.ui-button:active,
   z-index: inherit;
 }
 
-.subscription__form::before {
+.subscription__close {
   position: absolute;
-  content: url(../img/close.svg);
   top: 20px;
   right: 24px;
   cursor: pointer;
@@ -1483,7 +1482,7 @@ a.ui-button:active,
   margin-top: 36px;
 }
 
-checkbox-block {
+.checkbox-block {
   display: flex;
 }
 
