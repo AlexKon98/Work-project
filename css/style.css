@@ -1667,3 +1667,175 @@ a.ui-button:active,
   background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
   box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
 }
+
+/* Стили для формы входа */
+
+.sign-in__form {
+  padding: 38px 38px 44px 38px;
+  width: 448px;
+  box-shadow: 0px 11.175px 33.525px rgba(163, 163, 163, 0.1);
+  border-radius: 6px;
+}
+
+.sign-in__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in__heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #525252;
+}
+
+.sign-in__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.sign-in__btn {
+  max-width: 372px;
+  display: flex;
+  align-items: center;
+  padding: 19px 25px;
+  border: none;
+  border-radius: 2px;
+  background-color: #F5F9FF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #696969;
+  transition: opacity 300ms ease-in-out;
+  margin-bottom: 12px;
+}
+
+.sign-in__btn:last-child {
+  margin-bottom: 0;
+}
+
+.sign-in__btn:hover {
+  opacity: .7;
+}
+
+.sign-in__same-line {
+  padding-right: 17px;
+}
+
+.sign-in__or {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 38px;
+}
+
+.or {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C4;
+}
+
+.stick {
+  width: 150px;
+  border-top: 1px solid #E8E8E8;
+}
+
+.menu-special {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.sign-in__heading-low {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #525252;
+  margin-bottom: 16px;
+}
+
+.sign-in__input {
+  display: block;
+  width: 100%;
+  padding: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+  border-radius: 2px;
+  border: 1px solid #C4C4C4 !important;
+}
+
+.sign-in__input-last {
+  margin-bottom: 40px;
+}
+
+.sign-in__submit {
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  padding: 26px 110px;
+  color: #FFF;
+  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.sign-in__submit:hover {
+  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
+  box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
+}
+
+.sign-in__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #C4C4C4;
+  margin-bottom: 10px;
+}
+
+.sign-in__content {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C4;
+}
+
+.same-line {
+  padding-left: 6px;
+}
+
+.sign-in__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #69AFD6;
+}
