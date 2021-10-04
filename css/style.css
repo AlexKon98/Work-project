@@ -2739,6 +2739,7 @@ a.ui-button:active,
 .ref__img {
   max-width: 200px;
   max-height: 323px;
+  object-fit: cover;
 }
 
 .ref__content__text {
@@ -2792,6 +2793,7 @@ a.ui-button:active,
 }
 
 .your-bonuses__img {
+  object-fit: cover;
   max-width: 320px;
 }
 
