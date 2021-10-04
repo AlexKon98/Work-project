@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
-  <title>Document</title>
+  <title>Вход</title>
 </head>
 <body>
   <div class="menu-special sing-in">
@@ -66,9 +66,9 @@
             <div class="stick"></div>
           </div>
           <h3 class="sign-in__heading-low">Электронный адрес / номер телефона</h3>
-          <input type="text" class="sign-in__input" placeholder="Электронный адрес / номер телефона">
+          <input autocomplete="off" type="text" id="name" data-validate-field="name" name="name" class="sign-in__input" placeholder="Электронный адрес / номер телефона">
           <h3 class="sign-in__heading-low">Пароль</h3>
-          <input type="password" class="sign-in__input sign-in__input-last" placeholder=". . . . . . . . . . . . . .">
+          <input autocomplete="off" data-validate-field="password" type="password" data-validate-rules="password" id="password" class="sign-in__input sign-in__input-last" placeholder=". . . . . . . . . . . . . .">
           <input type="submit" value="ВОЙТИ" class="sign-in__submit">
           <a href="#" class="sign-in__text">Забыли пароль?</a>
           <p class="sign-in__content">Впервые на сайте? <span class="same-line"><a href="#" class="sign-in__link">Зарегистрируйтесь</a></span></p>
@@ -84,5 +84,25 @@
       </div>
     </div>
   </div>
+  <script src="js/just-validate.min.js"></script>
+  <script>
+    new JustValidate('.form', {
+      rules: {
+        name: {
+          required: true,
+          minLength: 2,
+          maxLength: 30,
+        },
+        password: {
+          required: true,
+          password:true,
+        },
+      },
+      messages: {
+        password: 'Укажите пароль',
+        name: 'Укажите ваш телефон или адрес электронной почты',
+      },
+    });
+  </script>
 </body>
 </html>
