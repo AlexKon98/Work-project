@@ -23,26 +23,26 @@
         <div class="menu__header">
           <a href="#" class="menu__link"><img src="../img/menu-close.svg" alt="" class="menu__link-img"></a>
           <a href="#" class="menu__link"><img src="../img/learn-poem.svg" alt="" class="menu__link-img"></a>
-          <ul class="menu__social">
-            <li class="menu__social-link">
+          <div class="menu__social">
+            <div class="menu__social-link">
               <a href="#"><img src="../img/telegram.svg" alt="telegram"></a>
-            </li>
-            <li class="menu__social-link">
+            </div>
+            <div class="menu__social-link">
               <a href="#"><img src="../img/tiktok.svg" alt="tiktok"></a>
-            </li>
-            <li class="menu__social-link">
+            </div>
+            <div class="menu__social-link">
               <a href="#"><img src="../img/vk.svg" alt="vk"></a>
-            </li>
-            <li class="menu__social-link">
+            </div>
+            <div class="menu__social-link">
               <a href="#"><img src="../img/youtube.svg" alt="youtube"></a>
-            </li>
-            <li class="menu__social-link">
+            </div>
+            <div class="menu__social-link">
               <a href="#"><img src="../img/fb.svg" alt="facebook"></a>
-            </li>
-            <li class="menu__social-link">
+            </div>
+            <div class="menu__social-link">
               <a href="#"><img src="../img/inst.svg" alt="instagram"></a>
-            </li>
-          </ul>
+            </div>
+          </div>
           <a href="#" class="personal-area">
             <span class="menu__same-line"><img src="../img/user.svg" alt=""></span> Войти
           </a>
@@ -55,7 +55,7 @@
           <input autocomplete="off" type="text" id="email" data-validate-field="mail" name="email" class="registration__input" placeholder="Почта">
           <input autocomplete="off" data-validate-field="tel" data-validate-rules="phone" type="tel" id="tel" class="registration__input" placeholder="Телефон">
           <input autocomplete="off" data-validate-field="password" type="password" data-validate-rules="password" id="password" class="registration__input" placeholder="Пароль">
-          <input autocomplete="off" data-validate-field="secondPassword" data-validate-rules="secondPassword" id="secondPassword" type="text" class="registration__input" placeholder="Повторите пароль">
+          <input autocomplete="off" data-validate-field="secondPassword" data-validate-rules="secondPassword" id="secondPassword" type="password" class="registration__input" placeholder="Повторите пароль">
           <input type="submit" class="registration__btn" value="ЗАРЕГИСТРИРОВАТЬСЯ">
       </form>
     </div>
@@ -64,7 +64,7 @@
     <script src="js/inputmask.min.js"></script>
     <script>
       var anySelector = document.querySelector('input[type="tel"]');
-      var im = new Inputmask("9 (999) 999 99 99");
+      var im = new Inputmask("7 (999) 999 99 99");
 
       im.mask(anySelector);
 
@@ -92,6 +92,7 @@
           },
           secondPassword: {
             required: true,
+            password:true,
           }
         },
         messages: {

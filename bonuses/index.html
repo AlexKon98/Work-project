@@ -13,32 +13,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="js/index.js" defer></script>
   <title>Мои бонусы</title>
 </head>
 <body>
   <header>
     <div class="container">
-        <div class="header_content">
-            <div class="menu_img"><img src="../img/menu.svg" alt=""></div>
-            <div class="header_crutch"></div>
-            <div class="header_catalog">Каталог</div>
-            <div class="header_search">
-                <input placeholder="Поиск" type="text">
+      <div class="header_content">
+        <div class="menu_img"><img src="../img/menu.svg" alt=""></div>
+        <div class="header_crutch"></div>
+        <div class="header_catalog">Каталог</div>
+        <div class="header_search">
+          <input placeholder="Поиск" type="text">
+        </div>
+        <div class="header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
+        <div class="header_user">
+            <div class="header_entert">
+              <img src="../img/user.svg" alt="">
+              <div>
+                Войти
+              </div>
             </div>
-            <div class="header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
-            <div class="header_user">
-                <div class="header_entert">
-                    <img src="../img/user.svg" alt="">
-                    <div>
-                        Войти
-                    </div>
-                </div>
-                <div class="header_basket">
-                    <img src="../img/handbag.svg" alt=""> Корзина пуста
-                </div>
+            <div class="header_basket">
+              <img src="../img/handbag.svg" alt=""> Корзина пуста
             </div>
         </div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -96,12 +95,12 @@
               <div class="ref__link">Реферальная ссылка</div>
               <img src="../img/link.svg" alt="">
             </div>
-            <input type="text" placeholder="https://vk.com/doc423645031е" class="ref__input">
+            <input type="text" value="https://vk.com/doc423645031е" class="ref__input" disabled>
             <div class="ref__text-input">
               <div class="ref__link">Реферальный код для друга</div>
               <img src="../img/link.svg" alt="">
             </div>
-            <input type="text" placeholder="НАТАЛЬЯ10024" class="ref__input">
+            <input type="text" value="НАТАЛЬЯ10024" class="ref__input" disabled>
             <div class="ref__text-input">
               <div class="ref__link">Вставить код</div>
             </div>
@@ -261,5 +260,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 </html>
