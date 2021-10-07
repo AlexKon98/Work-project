@@ -1879,8 +1879,8 @@ a.ui-button:active,
 
 .ui-accordion .ui-accordion-header,
 .ui-accordion .ui-accordion-content {
-  padding: 0 0 0 0 !important;
-  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .ui-widget-content {
@@ -3007,4 +3007,48 @@ button, a, input[type="submit"] {
   font-size: 20px;
   line-height: 24px;
   color: #C84528;
+}
+
+/* Стили для ВОпрос-Ответ */
+
+.faq {
+  padding: 120px 0 160px 0;
+}
+
+.faq__wrapper {
+  text-align: center;
+}
+
+.faq__heading {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: 0.03em;
+  color: #276F97;
+  margin-bottom: 70px;
+}
+
+.accordion__heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  color: #414141 !important;
+  padding: 33px 40px 33px 40px !important;
+  background-color: #DAF2FF !important;
+  margin-bottom: 5px !important;
+}
+
+.faq__plus {
+  width: 47px;
+  height: 44px;
+  background-color: #DAF2FF;
+  border-radius: 50%;
 }
