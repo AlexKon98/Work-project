@@ -52,7 +52,7 @@
       <form action="#" class="form password__form">
         <h2 class="password__heading">Забыли пароль?</h2>
         <p class="password__text">Не волнуйтесь, мы отправим вам сообщение для сброса пароля.</p>
-        <input autocomplete="off"  type="text" id="email" data-validate-field="mail" name="email" placeholder="Электронный адрес / номер телефона" class="password__input">
+        <input autocomplete="off"  type="text" id="email" data-validate-field="mail" name="email" placeholder="Электронный адрес" class="password__input">
         <input type="submit" value="ПРОДОЛЖИТЬ" class="password__submit">
       </form>
     </div>
@@ -73,11 +73,10 @@
         mail: {
           required: true,
           email: true,
-          tel: true,
         }
       },
       messages: {
-        mail: 'Укажите ваш e-mail или телефон',
+        mail: 'Укажите ваш e-mail',
       },
     });
   </script>

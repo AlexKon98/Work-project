@@ -54,8 +54,8 @@
           <input autocomplete="off" type="text" id="name" data-validate-field="name" name="name" class="registration__input" placeholder="Имя и фамилия">
           <input autocomplete="off" type="text" id="email" data-validate-field="mail" name="email" class="registration__input" placeholder="Почта">
           <input autocomplete="off" data-validate-field="tel" data-validate-rules="phone" type="tel" id="tel" class="registration__input" placeholder="Телефон">
-          <input autocomplete="off" data-validate-field="password" type="password" data-validate-rules="password" id="password" class="registration__input" placeholder="Пароль">
-          <input autocomplete="off" data-validate-field="secondPassword" data-validate-rules="secondPassword" id="secondPassword" type="password" class="registration__input" placeholder="Повторите пароль">
+          <input autocomplete="off" data-validate-field="password" data-validate-rules="password" id="password" class="registration__input" placeholder="Пароль" type="password">
+          <input autocomplete="off" data-validate-field="secondPassword" data-validate-rules="secondPassword" id="secondPassword" class="registration__input" placeholder="Повторите пароль" type="password">
           <input type="submit" class="registration__btn" value="ЗАРЕГИСТРИРОВАТЬСЯ">
       </form>
     </div>
@@ -93,6 +93,13 @@
           secondPassword: {
             required: true,
             password:true,
+            function: () => {
+              let event;
+              const pasOne = document.getElementById('password').value;
+              const pasTwo = document.getElementById('secondPassword').value;
+              event = pasOne === pasTwo;
+              return event;
+            },
           }
         },
         messages: {
