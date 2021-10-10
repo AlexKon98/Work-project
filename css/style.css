@@ -3037,9 +3037,9 @@ button, a, input[type="submit"] {
   font-size: 28px;
   line-height: 34px;
   color: #414141 ;
-  padding: 33px 40px 33px 40px ;
+  padding: 28px 40px 28px 40px ;
   background-color: #DAF2FF ;
-  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .faq__plus {
@@ -3048,7 +3048,7 @@ button, a, input[type="submit"] {
   height: 44px;
   background-color: #DAF2FF;
   border-radius: 50%;
-  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: background-color .4s ease-in-out, transform .4s ease-in-out;
 }
 
 .faq__plus:before {
@@ -3061,7 +3061,7 @@ button, a, input[type="submit"] {
   z-index: 200;
   top: 21px;
   left: 8px;
-  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: background-color .4s ease-in-out, transform .4s ease-in-out;
 }
 
 .faq__plus::after {
@@ -3075,30 +3075,40 @@ button, a, input[type="submit"] {
   transform: translate(-50%) rotate(90deg);
   left: 23px;
   top: 21px;
-  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: background-color .4s ease-in-out, transform .4s ease-in-out;
 }
 
-.ui-state-active .faq__plus {
+.accordion__heading-active .faq__plus {
   transform: rotate(-90deg);
   background-color: #0086D0;
 }
 
-.ui-state-active .faq__plus::after,
-.ui-state-active .faq__plus::before {
+.accordion__heading-active .faq__plus::after,
+.accordion__heading-active .faq__plus::before {
   background-color: #fff;
 }
 
 .accordion__text {
   position: relative;
-  top: -5px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   color: #363636;
-  padding: 15px 40px 35px;
+  padding: 0 40px 35px;
   background-color: #DAF2FF;
   text-align: start;
   margin-bottom: 5px;
+}
+
+.faq__accordion__item {
+  max-height: 104px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  transition: all .4s ease-in-out;
+}
+
+.faq__accordion__item-active {
+  max-height: 500px;
 }
