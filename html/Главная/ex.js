@@ -12,7 +12,6 @@ arrBlocks.forEach(block => block.style.width = (windWidth - 50) / 3 + 'px')
 
 
 
-
 let goRig = () => {
     if (arrBlocks.length - 3 > slider_clicks) {
         slider_clicks += 1

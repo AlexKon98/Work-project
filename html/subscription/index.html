@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="js/index.js" defer></script>
+    <title>Subscription</title>
+</head>
+
+<body>
+    <div class="subscription" id="form">
+        <form action="" class="subscription__form">
+            <div class="subscription__close" id="close"><img src="../../img/close.svg" alt=""></div>
+            <h2 class="subscription__heading">Уведомления на e-mail</h2>
+            <div class="subscription__content">
+                <div class="form__wrapper">
+                    <div class="checkbox-block">
+                        <input type="checkbox" name="" id="sale" class="checkbox">
+                        <label for="sale" class="subscription__label">Акции и специальные предложения</label>
+                    </div>
+                    <div class="checkbox-block">
+                        <input type="checkbox" name="" id="services" class="checkbox">
+                        <label for="services" class="subscription__label">Сервисные сообщения</label>
+                    </div>
+                    <div class="checkbox-block">
+                        <input type="checkbox" name="" id="notifications" class="checkbox">
+                        <label for="notifications" class="subscription__label">Напоминания о повторении</label>
+                    </div>
+                </div>
+                <button class="subscription__btn form__btn">Отключить все</button>
+            </div>
+            <button class="subscription__btn">Отписаться от всего</button>
+        </form>
+    </div>
+</body>
+
+</html>
