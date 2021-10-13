@@ -3834,6 +3834,7 @@ input[type="submit"] {
   line-height: 22px;
   color: #525252;
   margin-right: 32px;
+  cursor: pointer;
 }
 
 input[disabled] {
