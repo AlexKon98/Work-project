@@ -9,18 +9,14 @@ link.forEach((li) => {
   });
 });
 
-// const form = document.getElementById('form');
-// const btn = document.getElementById('submit');
-// const ref = document.getElementById('ref');
+const form = document.getElementById('form');
+const inp = document.querySelectorAll('.personal_area__input');
 
-// form.addEventListener('submit', (f) => {
-//   f.preventDefault();
-//   document.getElementById('name').setAttribute('disabled', 'disabled');
-//   document.getElementById('tel').setAttribute('disabled', 'disabled');
-// }, true);
-
-// btn.addEventListener('click', () => {
-//   if(ref.value) {
-//     ref.setAttribute('disabled', 'disabled');
-//   }
-// })
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  inp.forEach((a) => {
+    if(a.hasAttribute('disabled')) {
+      a.setAttribute('disabled', 'disabled');
+    }
+  });
+});

@@ -2935,8 +2935,7 @@ a.ui-button:active,
 }
 
 .js-validate-error-label {
-    margin-top: -20px;
-    margin-bottom: 5px;
+    max-width: 346px;
     color: var(--heading-color-light);
 }
 
