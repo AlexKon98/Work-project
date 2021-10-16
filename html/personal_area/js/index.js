@@ -9,18 +9,18 @@ link.forEach((li) => {
   });
 });
 
-const form = document.getElementById('form');
-const btn = document.getElementById('submit');
-const ref = document.getElementById('ref');
+// const form = document.getElementById('form');
+// const btn = document.getElementById('submit');
+// const ref = document.getElementById('ref');
 
-form.addEventListener('submit', (f) => {
-  f.preventDefault();
-  document.getElementById('name').setAttribute('disabled', 'disabled');
-  document.getElementById('tel').setAttribute('disabled', 'disabled');
-}, true);
+// form.addEventListener('submit', (f) => {
+//   f.preventDefault();
+//   document.getElementById('name').setAttribute('disabled', 'disabled');
+//   document.getElementById('tel').setAttribute('disabled', 'disabled');
+// }, true);
 
-btn.addEventListener('click', () => {
-  if(ref.value) {
-    ref.setAttribute('disabled', 'disabled');
-  }
-})
+// btn.addEventListener('click', () => {
+//   if(ref.value) {
+//     ref.setAttribute('disabled', 'disabled');
+//   }
+// })

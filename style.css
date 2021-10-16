@@ -79,7 +79,6 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 
 img {
-    max-width: 100%;
     display: block;
 }
 
@@ -3773,19 +3772,22 @@ input[type="submit"] {
   justify-content: space-between;
 }
 
-.personal_area__menu {
+.personal_area__menu,
+.get_ready__menu {
   padding: 37px 26px 36px 26px;
   box-shadow: 0px 2px 16px rgba(201, 201, 201, 0.1);
   border-radius: 4px;
 }
 
-.personal_area__menu-block {
+.personal_area__menu-block,
+.get_ready__menu-block {
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
 }
 
-.personal_area__link {
+.personal_area__link,
+.get_ready__link {
   background-color: #fff;
   max-width: 238px;
   font-family: 'Montserrat';
@@ -3798,7 +3800,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.personal_area__link:nth-child(1) {
+.personal_area__link:nth-child(1),
+.get_ready__link:nth-child(1) {
   margin-bottom: 16px;
 }
 
@@ -3873,6 +3876,159 @@ input[disabled] {
 
 /* Стили для личного кабинета */
 
+/* Стили для старта изучения стихов */
+
+.get_ready {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.get_ready__heading {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+  color: #276F97;
+  margin-bottom: 50px;
+}
+
+.get_ready__menu {
+  margin-bottom: 86px;
+}
+
+.get_redy__player,
+.get_ready__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get_redy__player {
+  width: 313px;
+}
+
+.get_ready__btns {
+  width: 115px;
+}
+
+.get_ready__btn {
+  background-color: #fff;
+}
+
+.get_ready__name {
+  max-width: 175px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #006AA5;
+}
+
+.get_ready__img {
+  position: relative;
+  z-index: 10;
+}
+
+.get_ready__heading_low {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 45px;
+  color: #276F97;
+  margin-bottom: 18px;
+}
+
+.get_ready__form {
+  width: 810px;
+  background: #F9FBFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 50px 35px 54px;
+  margin-bottom: 30px;
+}
+
+.get_ready_img-block {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+  border: 4px solid #276F97;
+  background-image: url(img/ava_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.get_ready__star {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  padding-top: 26px;
+  padding-left: 5px;
+  text-align: center;
+  background-image: url(img/star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -25px;
+  left: -25px;
+}
+
+.get_ready__btns-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.get_ready__button {
+  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+  border-radius: 6.67559px;
+  padding: 19px 153px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.get_ready__button:first-child {
+  margin-bottom: 16px;
+}
+
+.get_ready__start {
+  display: flex;
+}
+
+.get_ready__start-btn {
+  margin-left: auto;
+  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+  border-radius: 6px;
+  padding: 25px 81px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.get_ready__start-btn:hover,
+.get_ready__button:hover {
+  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
+  box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
+}
+
+/* Стили для старта изучения стихов */
 
 /*Active*/
 
@@ -3898,7 +4054,8 @@ input[disabled] {
     display: block;
 }
 
-.personal_area__link_active {
+.personal_area__link_active,
+.get_ready__link_active {
   color: #006AA5;
 }
 
