@@ -12,11 +12,9 @@ link.forEach((li) => {
 const form = document.getElementById('form');
 const inp = document.querySelectorAll('.personal_area__input');
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  inp.forEach((a) => {
-    if(a.hasAttribute('disabled')) {
-      a.setAttribute('disabled', 'disabled');
-    }
-  });
-});
+form.addEventListener('submit', (f) => {
+  setTimeout(() => {
+      document.getElementById('name').setAttribute('disabled','disabled')
+      document.getElementById('tel').setAttribute('disabled', 'disabled');
+  },1);
+}, true);
