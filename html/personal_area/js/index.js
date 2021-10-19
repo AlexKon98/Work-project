@@ -10,7 +10,6 @@ link.forEach((li) => {
 });
 
 const form = document.getElementById('form');
-const inp = document.querySelectorAll('.personal_area__input');
 
 form.addEventListener('submit', (f) => {
   setTimeout(() => {
