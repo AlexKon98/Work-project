@@ -79,6 +79,7 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 
 img {
+    max-width: 100%;
     display: block;
 }
 
@@ -185,6 +186,36 @@ button {
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+progress {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-size: auto;
+    height: 2px;
+    width: 100%;
+}
+
+progress {
+    background: #EBEBEB;
+}
+
+progress::-webkit-progress-bar {
+    background: #EBEBEB;
+}
+
+progress {
+    color: #7EC3E9;
+}
+
+progress::-moz-progress-bar {
+    background: #7EC3E9;
+}
+
+progress::-webkit-progress-value {
+    background: #7EC3E9;
 }
 
 
@@ -306,6 +337,7 @@ header {
     width: max-content;
     transition: max-height 0.5s ease-out;
     cursor: default;
+    z-index: 9;
 }
 
 .header_enter_menu:hover {
@@ -2935,7 +2967,6 @@ a.ui-button:active,
 }
 
 .js-validate-error-label {
-    max-width: 346px;
     color: var(--heading-color-light);
 }
 
@@ -3748,286 +3779,815 @@ input[type="submit"] {
     max-height: 500px;
 }
 
+
+/*Poem Choice*/
+
+.start_header {
+    padding-top: 50px;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.header_start {
+    background: #F9FBFF;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #696969;
+    padding: 17px 32px;
+    width: 45%;
+}
+
+.header_start_task {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.start_choice_title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4A8AAD;
+    padding-top: 10px;
+}
+
+.start_choice_days {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #575757;
+    width: max-content;
+}
+
+.start_choice_days div {
+    padding-top: 8px;
+    padding-bottom: 28px;
+}
+
+.start_choice_block button {
+    background: #7EC3E9;
+    border-radius: 4px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.start_choice_block button:hover {
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+}
+
+
+/*Poem Choice*/
+
+
+/*Learn*/
+
+.learn {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.learn .container {
+    width: 100%;
+}
+
+.learn_box {
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 30px rgba(237, 237, 237, 0.05), 4px 8px 30px rgba(190, 190, 190, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn_header {
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+}
+
+.learn_header_prosent {
+    position: absolute;
+    right: 20px;
+    bottom: -35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #192811;
+    width: 220px;
+    display: none;
+}
+
+.learn_header_prosent progress {
+    margin-left: 5px;
+}
+
+.header_prosent_numbers {
+    width: calc(100% + 17px);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.header_prosent_numbers div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_prosent_numbers div::before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: linear-gradient(151.39deg, #7BC1E8 -29.66%, #276F97 124.26%);
+    top: -17px;
+}
+
+.learn_footert {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    color: #4A8AAD;
+    padding-top: 77px;
+}
+
+.learn_footert button {
+    background: #90CFF2;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 25px 77px;
+}
+
+.learn_footert button:hover {
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+    border-radius: 6px;
+}
+
+
+/*Learn*/
+
+.learn_one,
+.learn_two,
+.learn_three,
+.learn_four,
+.learn_five,
+.learn_six {
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: 0;
+}
+
+.learn_one_content,
+.learn_two_content,
+.learn_three_content,
+.learn_four_content,
+.learn_five_content,
+.learn_six_content {
+    max-height: 400px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.learn_one_content::-webkit-scrollbar,
+.learn_two_content::-webkit-scrollbar,
+.learn_three_content::-webkit-scrollbar,
+.learn_four_content::-webkit-scrollbar,
+.learn_five_content::-webkit-scrollbar,
+.learn_six_content::-webkit-scrollbar {
+    width: 15px;
+    background: #F5F9FF;
+}
+
+.learn_one_content::-webkit-scrollbar-thumb,
+.learn_two_content::-webkit-scrollbar-thumb,
+.learn_three_content::-webkit-scrollbar-thumb,
+.learn_four_content::-webkit-scrollbar-thumb,
+.learn_five_content::-webkit-scrollbar-thumb,
+.learn_six_content::-webkit-scrollbar-thumb {
+    background: rgba(205, 225, 255, 0.81);
+}
+
+
+/*LearnOne*/
+
+.learn_one_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #414141;
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.learn_one_content {
+    max-width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.learn_one_content svg {
+    cursor: pointer;
+    fill: none;
+}
+
+.learn_one_content svg:hover {
+    fill: #f6fcff;
+}
+
+
+/*LearnOne*/
+
+
+/*LearnTwo*/
+
+.learn_two {
+    width: 100%;
+}
+
+.learn_two_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #414141;
+    text-align: center;
+}
+
+.learn_two_content {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #575757;
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+.learn_two_content div {
+    padding-bottom: 30px;
+}
+
+
+/*LearnTwo*/
+
+
+/*LearnThree*/
+
+.learn_three {
+    width: 100%;
+}
+
+.learn_three_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #414141;
+}
+
+.learn_three_content {
+    overflow-y: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #414141;
+    margin-top: 30px;
+}
+
+.learn_three_content div {
+    padding-bottom: 30px;
+}
+
+.learn_three_content::-webkit-scrollbar {
+    width: 15px;
+    background: #F5F9FF;
+}
+
+.learn_three_content::-webkit-scrollbar-thumb {
+    background: rgba(205, 225, 255, 0.81);
+}
+
+
+/*LearnThree*/
+
+
+/*LearnFour*/
+
+.learn_four {
+    width: 100%;
+}
+
+.learn_four_title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #414141;
+}
+
+.learn_four_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.learn_four_block {
+    width: calc((100% - 60px) / 4);
+}
+
+.learn_block_img {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: grey;
+    margin-bottom: 25px;
+}
+
+.learn_block_img img {
+    width: 100%;
+}
+
+.learn_block_text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #575757;
+    cursor: default;
+}
+
+.learn_block_listen {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 16px 5px 5px;
+}
+
+.learn_block_listen:hover svg {
+    fill: #d6edf8;
+}
+
+.learn_block_listen svg {
+    fill: none;
+    margin-right: 10px;
+}
+
+.learn_block_listen div {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #575757;
+}
+
+
+/*LearnFour*/
+
+
+/*LearnFive*/
+
+.learn_five {
+    width: 100%;
+}
+
+.learn_five_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #414141;
+    position: relative;
+}
+
+.learn_five_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.learn_five_progress {
+    position: absolute;
+    right: 80px;
+    top: -15px;
+}
+
+.learn_five_block {
+    width: calc((100% - 60px) / 4);
+}
+
+.learn_block_closed {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: #F5F9FF;
+    padding: 5px 16px 5px 5px;
+    position: relative;
+}
+
+.learn_block_closed svg {
+    fill: none;
+    margin-right: 10px;
+}
+
+.learn_block_closed div {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #575757;
+}
+
+.learn_block_closed div img {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+
+/*LearnFive*/
+
+
+/*LearnSix*/
+
+
+/*LearnSix*/
+
+.learn_six_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #414141;
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn_six_title .learn_block_listen {
+    width: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+}
+
+.learn_six_title .learn_block_listen div {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.learn_six_content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #575757;
+}
+
+.learn_six_content br {
+    padding-bottom: 30px;
+}
+
+.learn_six_content span {
+    background: #288FC8;
+    color: #288FC8;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+
 /* Стили для личного кабинета */
 
 .personal_area__block {
-  padding-top: 120px;
-  padding-bottom: 160px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.personal_area__same-line {
+    max-width: 346px;
 }
 
 .personal_area__heading {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 50px;
-  letter-spacing: 0.03em;
-  color: #276F97;
-  margin-bottom: 50px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: #276F97;
+    margin-bottom: 50px;
 }
 
 .personal_area__flex {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .personal_area__menu,
 .get_ready__menu {
-  padding: 37px 26px 36px 26px;
-  box-shadow: 0px 2px 16px rgba(201, 201, 201, 0.1);
-  border-radius: 4px;
+    padding: 37px 26px 36px 26px;
+    box-shadow: 0px 2px 16px rgba(201, 201, 201, 0.1);
+    border-radius: 4px;
 }
 
 .personal_area__menu-block,
 .get_ready__menu-block {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
 }
 
 .personal_area__link,
 .get_ready__link {
-  background-color: #fff;
-  max-width: 238px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: left;
-  color: #525252;
-  cursor: pointer;
+    background-color: #fff;
+    max-width: 238px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    color: #525252;
+    cursor: pointer;
 }
 
 .personal_area__link:nth-child(1),
 .get_ready__link:nth-child(1) {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .personal_area__heading_low {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 37px;
-  color: #276F97;
-  margin-bottom: 30px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    color: #276F97;
+    margin-bottom: 30px;
 }
 
 .persoanl_area__form {
-  width: 810px;
-  padding: 70px 160px 70px 100px;
-  box-shadow: 0px 8px 30px rgba(163, 163, 163, 0.1);
-  border-radius: 4px;
+    width: 810px;
+    padding: 70px 160px 70px 100px;
+    box-shadow: 0px 8px 30px rgba(163, 163, 163, 0.1);
+    border-radius: 4px;
 }
 
 .personal_area__wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .personal_area__label {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #525252;
-  margin-right: 32px;
-  cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #525252;
+    margin-right: 32px;
+    cursor: pointer;
 }
 
 input[disabled] {
-  background-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 .personal_area__input {
-  width: 346px;
-  padding: 17px 30px;
-  border: 1px solid #C4C4C4;
-  border-radius: 2px;
+    width: 346px;
+    padding: 17px 30px;
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
 }
 
 .personal_area__btn {
-  margin-top: 40px;
-  display: block;
-  margin-left: auto;
-  border: none;
-  padding: 20px 118px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 6px;
-  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    border: none;
+    padding: 20px 118px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
 }
 
 .personal_area__btn:hover {
-  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
-  box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
+    box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
 }
 
+
 /* Стили для личного кабинета */
+
 
 /* Стили для старта изучения стихов */
 
 .get_ready {
-  padding-top: 120px;
-  padding-bottom: 160px;
+    padding-top: 120px;
+    padding-bottom: 160px;
 }
 
 .get_ready__heading {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 50px;
-  letter-spacing: 0.03em;
-  color: #276F97;
-  margin-bottom: 50px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: #276F97;
+    margin-bottom: 50px;
 }
 
 .get_ready__menu {
-  margin-bottom: 86px;
+    margin-bottom: 86px;
 }
 
 .get_redy__player,
 .get_ready__btns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .get_redy__player {
-  width: 313px;
+    width: 313px;
 }
 
 .get_ready__btns {
-  width: 115px;
+    width: 115px;
 }
 
 .get_ready__btn {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .get_ready__name {
-  max-width: 175px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #006AA5;
+    max-width: 175px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #006AA5;
 }
 
 .get_ready__img {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 
 .get_ready__heading_low {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 45px;
-  color: #276F97;
-  margin-bottom: 18px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 45px;
+    color: #276F97;
+    margin-bottom: 18px;
 }
 
 .get_ready__form {
-  width: 810px;
-  background: #F9FBFF;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 45px 50px 35px 54px;
-  margin-bottom: 30px;
+    width: 810px;
+    background: #F9FBFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 50px 35px 54px;
+    margin-bottom: 30px;
 }
 
 .get_ready_img-block {
-  width: 152px;
-  height: 152px;
-  border-radius: 50%;
-  border: 4px solid #276F97;
-  background-image: url(img/ava_3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    border: 4px solid #276F97;
+    background-image: url(img/ava_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .get_ready__star {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  padding-top: 26px;
-  padding-left: 5px;
-  text-align: center;
-  background-image: url(img/star.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  top: -25px;
-  left: -25px;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    padding-top: 26px;
+    padding-left: 5px;
+    text-align: center;
+    background-image: url(img/star.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -25px;
+    left: -25px;
 }
 
 .get_ready__btns-block {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .get_ready__button {
-  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
-  border-radius: 6.67559px;
-  padding: 19px 153px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+    border-radius: 6.67559px;
+    padding: 19px 153px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .get_ready__button:first-child {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .get_ready__start {
-  display: flex;
+    display: flex;
 }
 
 .get_ready__start-btn {
-  margin-left: auto;
-  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
-  border-radius: 6px;
-  padding: 25px 81px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+    margin-left: auto;
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+    border-radius: 6px;
+    padding: 25px 81px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .get_ready__start-btn:hover,
 .get_ready__button:hover {
-  background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
-  box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #619FC1 191.29%);
+    box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
 }
 
+
 /* Стили для старта изучения стихов */
+
 
 /*Active*/
 
@@ -4053,9 +4613,15 @@ input[disabled] {
     display: block;
 }
 
+.learn_step {
+    height: auto;
+    padding-top: 60px;
+}
+
 .personal_area__link_active,
 .get_ready__link_active {
-  color: #006AA5;
+    color: #006AA5;
 }
+
 
 /*Active*/

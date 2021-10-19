@@ -1,154 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" zrel="stylesheet">
-  <link rel="stylesheet" href="../../normalize.css">
-  <link rel="stylesheet" href="../../style.css">
-  <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" zrel="stylesheet">
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Личный кабинет</title>
 </head>
+
 <body>
-  <header>
-    <div class="container">
-        <div class="header_content">
-            <div class="menu_img"><img src="../../img/menu.svg" alt=""></div>
-            <div class="header_crutch"></div>
-            <div class="header_catalog">Каталог</div>
-            <div class="header_search">
-                <input placeholder="Поиск" type="text">
-            </div>
-            <div class="header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
-            <div class="header_user">
-                <div class="header_enter">
-                    <img src="../../img/user.svg" alt="">
-                    <div class="nik_nik">
-                        Войти
+    <header>
+        <div class="container">
+            <div class="header_content">
+                <div class="menu_img"><img src="../../img/menu.svg" alt=""></div>
+                <div class="header_crutch"></div>
+                <div class="header_catalog">Каталог</div>
+                <div class="header_search">
+                    <input placeholder="Поиск" type="text">
+                </div>
+                <div class="header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
+                <div class="header_user">
+                    <div class="header_enter">
+                        <img src="../../img/user.svg" alt="">
+                        <div class="nik_nik">
+                            Войти
+                        </div>
+                    </div>
+                    <div class="header_basket">
+                        <img src="../../img/handbag.svg" alt=""> Корзина пуста
                     </div>
                 </div>
-                <div class="header_basket">
-                    <img src="../../img/handbag.svg" alt=""> Корзина пуста
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="personal_area">
+            <div class="personal_area__block">
+                <div class="container">
+                    <h2 class="personal_area__heading">Личный кабинет</h2>
+                    <div class="personal_area__flex">
+                        <div class="personal_area__menu">
+                            <div class="personal_area__menu-block">
+                                <button class="personal_area__link personal_area__link_active">Личный кабинет</button>
+                                <button class="personal_area__link">Приступить к изучению стихов</button>
+                            </div>
+                            <button class="personal_area__link">Выйти</button>
+                        </div>
+                        <div class="persoanl_area__form-block">
+                            <h3 class="personal_area__heading_low">Мой профиль</h3>
+                            <div action="#" class="form persoanl_area__form" id="form">
+                                <div class="personal_area__wrapper">
+                                    <label class="personal_area__label" for="name">Имя и Фамилия</label>
+                                    <input class="personal_area__input" type="text" value="Николай Алексеев" id="name" disabled>
+                                </div>
+                                <div class="personal_area__wrapper">
+                                    <label class="personal_area__label" for="mail">Почта</label>
+                                    <div class="personal_area__same-line">
+                                        <div class="personal_area__alert">
+                                            <input class="personal_area__input" autocomplete="off" type="text" data-validate-field="mail" name="email" placeholder="example@example.com" id="mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal_area__wrapper">
+                                    <label class="personal_area__label" for="tel">Телефон</label>
+                                    <input class="personal_area__input" type="tel" value="8 (999) 999-99-99" id="tel" disabled>
+                                </div>
+                                <div class="personal_area__wrapper">
+                                    <label class="personal_area__label" for="password">Сменить пароль</label>
+                                    <div class="personal_area__same-line">
+                                        <div class="personal_area__alert">
+                                            <input class="personal_area__input" autocomplete="off" data-validate-field="password" type="password" data-validate-rules="password" id="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal_area__wrapper">
+                                    <label class="personal_area__label" for="ref">Реферальный код</label>
+                                    <input class="personal_area__input" type="text" id="ref">
+                                </div>
+                                <input type="submit" value="СОХРАНИТЬ" class="personal_area__btn" id="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_block footer_menu">
+                    <div>Подробнее о курсе</div>
+                    <div>Каталог</div>
+                    <div>Статьи</div>
+                    <div>Вопросы и ответы</div>
+                    <div>Благотворительность</div>
+                </div>
+                <div class="footer_block footer_contacts">
+                    <img src="../../img/main_logo.svg" alt="">
+                    <div>Attachments_nvstepan@mail.ru</div>
+                    <div class="footer_social">
+                        <img src="../../img/telega.svg" alt="">
+                        <img src="../../img/TikTok.svg" alt="">
+                        <img src="../../img/VK.svg" alt="">
+                        <img src="../../img/YT.svg" alt="">
+                        <img src="../../img/FB.svg" alt="">
+                        <img src="../../img/INST.svg" alt="">
+                    </div>
+                    <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
+                </div>
+                <div class="footer_block footer_bureaucracy">
+                    <div>
+                        <div>
+                            Копирование информации запрещено
+                        </div>
+                        <div>
+                            без письменного разрешения.
+                        </div>
+                    </div>
+                    <div class="footer_bureaucracy_confidentiality">Политика конфиденциальности</div>
+                    <div>Публичная оферта</div>
+                    <div class="footer_developer">
+                        <div>
+                            <div>Разработка</div>
+                            <div>сайта:</div>
+                        </div>
+                        <img src="../../img/SU_logo.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<main class="main">
-  <section class="personal_area">
-    <div class="personal_area__block">
-      <div class="container">
-        <h2 class="personal_area__heading">Личный кабинет</h2>
-        <div class="personal_area__flex">
-          <div class="personal_area__menu">
-            <div class="personal_area__menu-block">
-              <button class="personal_area__link personal_area__link_active">Личный кабинет</button>
-              <button class="personal_area__link">Приступить к изучению стихов</button>
-            </div>
-            <button class="personal_area__link">Выйти</button>
-          </div>
-          <div class="persoanl_area__form-block">
-            <h3 class="personal_area__heading_low">Мой профиль</h3>
-            <form action="#" class="form persoanl_area__form" id="form">
-              <div class="personal_area__wrapper">
-                <label class="personal_area__label" for="name">Имя и Фамилия</label>
-                <input class="personal_area__input" type="text" value="Николай Алексеев" id="name" disabled>
-              </div>
-              <div class="personal_area__wrapper">
-                <label class="personal_area__label" for="mail">Почта</label>
-                <div class="personal_area__same-line">
-                  <div class="personal_area__alert">
-                    <input class="personal_area__input" autocomplete="off" type="text" data-validate-field="mail" name="email" placeholder="example@example.com" id="mail">
-                  </div>
-                </div>
-              </div>
-              <div class="personal_area__wrapper">
-                <label class="personal_area__label" for="tel">Телефон</label>
-                <input class="personal_area__input" type="tel" value="8 (999) 999-99-99" id="tel" disabled>
-              </div>
-              <div class="personal_area__wrapper">
-                <label class="personal_area__label" for="password">Сменить пароль</label>
-                <div class="personal_area__same-line">
-                  <div class="personal_area__alert">
-                    <input class="personal_area__input" autocomplete="off" data-validate-field="password" type="password" data-validate-rules="password" id="password">
-                  </div>
-                </div>
-              </div>
-              <div class="personal_area__wrapper">
-                <label class="personal_area__label" for="ref">Реферальный код</label>
-                <input class="personal_area__input" type="text" id="ref">
-              </div>
-              <input type="submit" value="СОХРАНИТЬ" class="personal_area__btn" id="submit">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-<footer>
-  <div class="container">
-      <div class="footer_content">
-          <div class="footer_block footer_menu">
-              <div>Подробнее о курсе</div>
-              <div>Каталог</div>
-              <div>Статьи</div>
-              <div>Вопросы и ответы</div>
-              <div>Благотворительность</div>
-          </div>
-          <div class="footer_block footer_contacts">
-              <img src="../../img/main_logo.svg" alt="">
-              <div>Attachments_nvstepan@mail.ru</div>
-              <div class="footer_social">
-                  <img src="../../img/telega.svg" alt="">
-                  <img src="../../img/TikTok.svg" alt="">
-                  <img src="../../img/VK.svg" alt="">
-                  <img src="../../img/YT.svg" alt="">
-                  <img src="../../img/FB.svg" alt="">
-                  <img src="../../img/INST.svg" alt="">
-              </div>
-              <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
-          </div>
-          <div class="footer_block footer_bureaucracy">
-              <div>
-                  <div>
-                      Копирование информации запрещено
-                  </div>
-                  <div>
-                      без письменного разрешения.
-                  </div>
-              </div>
-              <div class="footer_bureaucracy_confidentiality">Политика конфиденциальности</div>
-              <div>Публичная оферта</div>
-              <div class="footer_developer">
-                  <div>
-                      <div>Разработка</div>
-                      <div>сайта:</div>
-                  </div>
-                  <img src="../../img/SU_logo.svg" alt="">
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
-<script src="js/index.js"></script>
-<script src="js/just-validate.min.js"></script>
+    </footer>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/index.js"></script>
     <script>
         new JustValidate('.form', {
             rules: {
-              mail: {
-                required: true,
-                email: true,
-              },
-              password: {
-                required: true,
-                password: true,
-              },
+                mail: {
+                    required: true,
+                    email: true,
+                },
+                password: {
+                    required: true,
+                    password: true,
+                },
             },
             messages: {
                 password: 'Пароль должен содержать 1 заглавную букву и хотя бы 1 цифру',
@@ -157,4 +159,5 @@
         });
     </script>
 </body>
+
 </html>
