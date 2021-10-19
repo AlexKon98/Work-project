@@ -18,6 +18,9 @@
     box-sizing: border-box;
 }
 
+audio {
+    display: none;
+}
 
 /* Убираем внутренние отступы */
 
