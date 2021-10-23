@@ -166,13 +166,23 @@
 
 
 
-                            <div class="store_filter_price">
-                                <div class="filter_price_minmax">
-                                    <div class="filter_price_min">0</div>
-                                    <div class="filter_price_max">10000</div>
-                                    <div class="filter_price_select">0 ₽</div>
+                            <div class="filter__block filter__block--slider">
+                                <div class="filter__cost table">
+                                    <div class="filter__head">цена</div>
                                 </div>
-                                <input type="range" value="0" min="0" max="10000" step="1">
+                                <div class="filter__slider">
+                                    <div id="filter__range"></div>
+                                </div>
+                                <div class="flex">
+                                    <div class="table-cell">
+                                        <label for="priceMin">от</label>
+                                        <input id="priceMin" type="text" value="5000" class="form-control">
+                                    </div>
+                                    <div class="table-cell">
+                                        <label for="priceMax">до</label>
+                                        <input id="priceMax" type="text" value="15000" class="form-control">
+                                    </div>
+                                </div>
                             </div>
                             <div class="store_filter_btn">Применить фильтры</div>
                         </div>
@@ -407,6 +417,9 @@
             </div>
         </div>
     </footer>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="programm.js"></script>
+    <script src="jquery-ui.js"></script>
     <script src='./ex.js'></script>
 </body>
 
