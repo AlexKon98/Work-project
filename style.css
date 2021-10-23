@@ -1255,8 +1255,7 @@ header {
 
 .products_block_img {
     background: grey;
-    width: 160px;
-    height: 215px;
+    height: 270px;
     overflow: hidden;
     display: flex;
     align-items: center;
