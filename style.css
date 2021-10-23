@@ -1242,7 +1242,7 @@ header {
 .store_products_blocks {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, calc((100% - 30px) / 3));
     grid-row-gap: 40px;
     grid-column-gap: 15px;
 }
@@ -1255,11 +1255,13 @@ header {
 
 .products_block_img {
     background: grey;
-    height: 160px;
+    width: 160px;
+    height: 215px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .products_block_img img {
@@ -1281,6 +1283,7 @@ header {
     color: #4A8AAD;
     padding-top: 10px;
     padding-bottom: 34px;
+    word-wrap: break-word;
 }
 
 .products_block_discount,
@@ -1781,7 +1784,7 @@ header {
     margin-bottom: 10px;
 }
 
-.product_block_bord:hover {
+.product_block_bord-active {
     border: 1px solid #006AA5;
 }
 
@@ -4588,9 +4591,39 @@ input[disabled] {
     box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
 }
 
-
 /* Стили для старта изучения стихов */
 
+
+/* Новые стили для фиксации header */
+
+header {
+    position: fixed;
+    left: 0;
+    background-color: #FFF;
+    right: 0;
+    z-index: 10;
+}
+
+main {
+    padding-top: 210px;
+}
+
+/* Новые стили для фиксации header */
+
+
+/* basket */
+
+.product__name,
+.product__author {
+    cursor: pointer;
+}
+
+.product__name:active,
+.product__author:active {
+    color: #006AA5;
+}
+
+/* basket */
 
 /*Active*/
 

@@ -85,3 +85,29 @@ window.addEventListener('resize', () => {
     recommendedBlocks.forEach(block => { block.style.width = (windRecommended - 48) / 5 + 'px' })
     recommendedCarousel.style.left = `calc((((${windRecommended + 'px'} - 48px) / 5) * ${-recommendedСlicks}) - ( 12px * ${recommendedСlicks})`
 })
+
+// Мой код
+
+let productBlockBord = document.querySelectorAll('.product_block_bord');
+let productOne = document.getElementById('product_block_bord-one');
+let productTwo = document.getElementById('product_block_bord-two');
+let productText = document.getElementById('product_text');
+
+productBlockBord.forEach((product) => {
+    product.addEventListener('click', () => {
+        productBlockBord.forEach((item) => {
+            item.classList.remove('product_block_bord-active');
+          });
+          product.classList.add('product_block_bord-active');
+    });
+});
+
+productOne.addEventListener('click', () => {
+    productText.innerHTML = 'Для современного мира перспективное планирование представляет собой интересный эксперимент проверки направлений прогрессивного развития. Для современного мира перспективное планирование представляет собой. Для современного мира перспективное планирование представляет собой интересный эксперимент проверки направлений прогрессивного развития. Для современного мира перспективное планирование представляет собой.';
+});
+    
+productTwo.addEventListener('click', () => {
+    productText.innerHTML = 'Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой свою это напоивший продолжил речью предупредила переписали свой взобравшись единственное, алфавит они дал он проектах подпоясал, ты она заманивший! Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой свою это напоивший продолжил речью предупредила переписали свой взобравшись единственное, алфавит они дал он проектах подпоясал, ты она заманивший!';
+})
+
+// Мой код 
