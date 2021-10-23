@@ -12,12 +12,7 @@ let storeProductsReset = document.querySelector('.store_products_reset')
 
 
 
-document.querySelector(".store_filter_price input").oninput = function() {
-    var value = (this.value - this.min) / (this.max - this.min) * 100
-    this.style.background = 'linear-gradient(to right, #5DA6CF 0%, #5DA6CF ' + value + '%, #E8E8E8 ' + value + '%, #E8E8E8 100%)'
-    filterPriceSelect.style.left = `calc(${value + '%'} - ${filterPriceSelect.offsetWidth /3.5 + 'px'})`
-    filterPriceSelect.innerText = `${this.value + ' ₽'}`
-}
+
 
 storeFilterBlock.forEach(block => {
     block.addEventListener('click', () => {
