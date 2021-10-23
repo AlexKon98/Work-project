@@ -61,6 +61,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    margin-top: 210px;
 }
 
 
@@ -233,7 +234,6 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
-    /**/
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
     font-size: 24px;
@@ -4597,14 +4597,11 @@ input[disabled] {
 
 header {
     position: fixed;
+    top: 0;
     left: 0;
-    background-color: #FFF;
     right: 0;
+    background-color: #FFF;
     z-index: 10;
-}
-
-main {
-    padding-top: 210px;
 }
 
 /* Новые стили для фиксации header */
@@ -4881,7 +4878,7 @@ main {
     background-color: #fff;
     top: -6px;
     cursor: pointer;
-    z-index: 10; 
+    z-index: 9; 
     position: absolute;
   }
   
