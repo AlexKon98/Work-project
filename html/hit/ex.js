@@ -41,50 +41,7 @@ window.addEventListener('resize', () => {
 })
 
 /////////////////////////////////////
-/* Спецально рахделил т.к. хз как там у тебя будет разбиваться по файлам*/
-
-
-let recommendedSliderWindow = document.querySelector('.recommended_slider_windiw')
-
-let recommendedliderLeft = document.querySelector('.recommended_slider_left')
-let recommendedliderRight = document.querySelector('.recommended_slider_right')
-let recommendedCarousel = document.querySelector('.recommended_slider_carousel')
-
-let recommendedBlocks = document.querySelectorAll('.recommended_slider_block')
-
-let recommendedСlicks = 0
-let windRecommended = recommendedSliderWindow.clientWidth
-
-
-recommendedBlocks.forEach(block => { block.style.width = (windRecommended - 48) / 5 + 'px' })
-
-
-let recommendedRig = () => {
-    if (recommendedBlocks.length - 5 > recommendedСlicks) {
-        recommendedСlicks += 1
-        recommendedCarousel.style.left = `calc((((${windRecommended + 'px'} - 48px) / 5) * ${-recommendedСlicks}) - ( 12px * ${recommendedСlicks})`
-    }
-}
-
-let recommendedLeft = () => {
-    if (recommendedСlicks !== 0) {
-        recommendedСlicks -= 1
-        recommendedCarousel.style.left = `calc((((${windRecommended + 'px'} - 48px) / 5) * ${-recommendedСlicks}) - ( 12px * ${recommendedСlicks})`
-    }
-}
-
-
-
-recommendedliderRight.addEventListener('click', () => { recommendedRig() })
-
-
-recommendedliderLeft.addEventListener('click', () => { recommendedLeft() })
-
-window.addEventListener('resize', () => {
-    windRecommended = recommendedSliderWindow.clientWidth
-    recommendedBlocks.forEach(block => { block.style.width = (windRecommended - 48) / 5 + 'px' })
-    recommendedCarousel.style.left = `calc((((${windRecommended + 'px'} - 48px) / 5) * ${-recommendedСlicks}) - ( 12px * ${recommendedСlicks})`
-})
+/* Спецально разделил т.к. хз как там у тебя будет разбиваться по файлам*/
 
 // Мой код
 
@@ -108,6 +65,36 @@ productOne.addEventListener('click', () => {
     
 productTwo.addEventListener('click', () => {
     productText.innerHTML = 'Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой свою это напоивший продолжил речью предупредила переписали свой взобравшись единственное, алфавит они дал он проектах подпоясал, ты она заманивший! Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Запятой свою это напоивший продолжил речью предупредила переписали свой взобравшись единственное, алфавит они дал он проектах подпоясал, ты она заманивший!';
+})
+
+let popup = document.getElementById('product__popup');
+let popupContent = document.getElementById('product__popup__content');
+let contentImg = document.querySelectorAll('.product__img');
+let closed = document.getElementById('close');
+
+contentImg.forEach((imgVid) => {
+    imgVid.addEventListener('click', (e) => {
+        e.preventDefault();
+        let obj;
+        if (imgVid.tagName == 'IMG') {
+            obj = document.createElement('img');
+            obj.src = imgVid.src;
+            popup.style.display = 'flex';
+            popupContent.appendChild(obj);
+        } else if (imgVid.tagName == 'VIDEO') {
+            obj = document.createElement('video');
+            obj.setAttribute('controls', true);
+            obj.src = imgVid.src;
+            popup.style.display = 'flex';
+            popupContent.appendChild(obj);
+        }
+    })
+})
+
+closed.addEventListener('click', () => {
+    popupContent.innerHTML = '';
+    popupContent.appendChild(closed);
+    popup.style.display = 'none';
 })
 
 // Мой код 

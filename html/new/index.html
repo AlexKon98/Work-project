@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
-
-
-    <title>Карточка товара Новинка</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <title>Document</title>
     <link rel="stylesheet" href="../../style.css">
 </head>
 
@@ -67,14 +66,18 @@
                     </div>
 
                     <div class="header_basket">
-                        <img src="../../img/handbag.svg" alt="">
-                        <div>2 товара <span>1356 ₽</span> </div>
+                        <img src="../../img/handbag.svg" alt=""> Корзина пуста
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+<main>
+    <div id="product__popup" class="product__popup">
+        <div id="product__popup__content" class="product__popup__content">
+            <div class="product__close" id="close"><img class="product__close-btn" src="../../img/close.svg" alt=""></div>
+        </div>
+    </div>
     <div class="product_list">
         <div class="container">
             <div class="product_content">
@@ -95,11 +98,10 @@
                     </div>
                     <div class="product_blocks">
                         <div class="product_block_img"><img src="#" alt="">
-                            <div class="new">Новинки</div>
-                        </div>
+                        <div class="new">Новинки</div></div>
                         <div class="product_block_info">
                             <div>
-                                <div id="product_block_bord-one" class="product_block_bord-active product_block_bord">Изучение онлайн</div>
+                                <div id="product_block_bord-one" class="product_block_bord product_block_bord-active">Изучение онлайн</div>
                                 <div id="product_block_bord-two" class="product_block_bord">
                                     <div>
                                         <div>Изучение онлайн</div>
@@ -121,12 +123,12 @@
                                 <div class="info_slider_left"><img src="../../img/arrow_left.svg" alt=""></div>
                                 <div class="info_slider_window">
                                     <div class="info_slider_carousel">
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
-                                        <div><img src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><img class="product__img" src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><img class="product__img" src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><img class="product__img" src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><img class="product__img" src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><img class="product__img" src="../../img/kid_photo_1.jpg" alt=""></div>
+                                        <div><video class="product__img" src="../../vid/test.mp4" alt=""></video></div>
                                     </div>
                                 </div>
                                 <div class="info_slider_right"><img src="../../img/arrow_right.svg" alt=""></div>
@@ -147,101 +149,105 @@
                 </div>
                 <div class="recommended">
                     <div class="recommended_title">Рекомендуем</div>
-                    <div class="recommended_slider">
-                        <div class="recommended_slider_left"><img src="../../img/arrow_left.svg" alt=""></div>
-                        <div class="recommended_slider_windiw">
-                            <div class="recommended_slider_carousel">
-
-                                <div class="recommended_slider_block">
+                    <div class="product__slider-flex">
+                        <img class="swiper-button-prev slider_prev-next slider_prev" src="../../img/arrow_left.svg" alt="">
+                        <div class="swiper slider">
+                            <div class="swiper-wrapper slider__wrapper">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
+                                <div class="swiper-slide slider__slide">
                                     <div class="recommended_slider_img">
-                                        <img src="/" alt="">
+                                        <img class="product__slider__img" src="../../img/charity-test-img.jpg" alt="">
                                     </div>
                                     <div class="recommended_slider_buy">КУПИТЬ</div>
                                 </div>
-                                <div class="recommended_slider_block">
-                                    <div class="recommended_slider_img">
-                                        <img src="/" alt="">
-                                    </div>
-                                    <div class="recommended_slider_buy">КУПИТЬ</div>
-                                </div>
-
-
-
                             </div>
                         </div>
-                        <div class="recommended_slider_right"><img src="../../img/arrow_right.svg" alt=""></div>
+                        <img class="swiper-button-next slider_prev-next slider_next" src="../../img/arrow_right.svg" alt="">
                     </div>
+                </div>
+                <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+                <script>
+                    const swiper = new Swiper('.swiper', {
+                        direction: 'horizontal',
+                        slidesPerView: 5,
+                        spaceBetween: 12,
+                        slidesPerGroup: 3,
+                        loop: false,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
                 </div>
             </div>
         </div>
-    </div>
-
+</main>
     <footer>
         <div class="container">
             <div class="footer_content">
