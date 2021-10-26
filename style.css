@@ -61,6 +61,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
     margin-top: 210px;
 }
 
@@ -229,11 +230,12 @@ progress::-webkit-progress-value {
 /*Header*/
 
 header {
-    border: 1px solid #276F97;
+    border-bottom: 1px solid #276F97;
     box-sizing: border-box;
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
+    /**/
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
     font-size: 24px;
@@ -1858,7 +1860,8 @@ header {
     cursor: pointer;
 }
 
-.product_text {
+.product_text,
+.product_text-hide {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1870,6 +1873,10 @@ header {
     line-height: 145%;
     color: #414141;
     padding-top: 24px;
+}
+
+.product_text-hide {
+    display: none;
 }
 
 .product_text_more {
@@ -1959,6 +1966,26 @@ header {
     max-width: none;
 }
 
+.recommended_slider_buy {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-top: 6px;
+    background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.recommended_slider_buy:hover {
+    background: #27749E;
+}
+
+
 /*Recommended*/
 
 
@@ -1967,7 +1994,7 @@ header {
 footer {
     padding-bottom: 25px;
     padding-top: 25px;
-    border: 1px solid #276F97;
+    border-top: 1px solid #276F97;
     box-sizing: border-box;
 }
 
@@ -1990,10 +2017,13 @@ footer {
 .footer_developer {
     display: flex;
     align-items: center;
+    color: #000;
+    width: 206px;
 }
 
 .footer_developer img {
     margin-left: 15px;
+    width: 96px;
 }
 
 .footer_menu {
@@ -2337,6 +2367,7 @@ footer {
     display: flex;
     padding-top: 120px;
     padding-bottom: 170px;
+    justify-content: center;
 }
 
 .charity__heading {
@@ -2348,11 +2379,11 @@ footer {
     max-width: 440px;
     max-height: 600px;
     object-fit: cover;
+    margin-left: auto;
 }
 
 .charity__content {
     max-width: 498px;
-    margin-right: auto;
 }
 
 .charity__text {
@@ -2378,6 +2409,7 @@ footer {
 /* Стили для меню */
 
 .menu {
+    margin-top: -210px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2389,6 +2421,7 @@ footer {
 .menu__social,
 .menu__content {
     display: flex;
+    align-items: flex-start;
 }
 
 .menu__content {
@@ -2557,7 +2590,7 @@ a.ui-button:active,
         margin-bottom: 20px;
     }
     .menu__heading {
-        font-size: 26px;
+        font-size: 20px;
         line-height: 32px;
     }
     .menu__img {
@@ -2569,6 +2602,7 @@ a.ui-button:active,
     }
     .accordion__item {
         margin-bottom: 10px;
+        font-size: 16px;
     }
 }
 
@@ -2904,7 +2938,6 @@ a.ui-button:active,
 
 .registration__form {
     max-width: 448px;
-    max-height: 634px;
     padding: 66px 69px 72px 69px;
     box-shadow: 0px 11.175px 33.525px rgba(163, 163, 163, 0.1);
     border-radius: 6px;
@@ -3138,10 +3171,6 @@ a.ui-button:active,
     border: 1px solid #C4C4C4;
 }
 
-.sign-in__input-last {
-    margin-bottom: 40px;
-}
-
 .sign-in__submit {
     border: none;
     width: 100%;
@@ -3156,6 +3185,7 @@ a.ui-button:active,
     line-height: 22px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-top: 40px;
     margin-bottom: 26px;
 }
 
@@ -3857,6 +3887,12 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;   
 }
 
 .learn_header {
@@ -4604,6 +4640,10 @@ header {
 
 /* catalog */
 
+.form-control {
+    padding: 5px;
+}
+
 .filter {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -4995,7 +5035,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: none;
-    border-radius: none;
+    border-radius: 4px;
 }
 
 .product__slider__img {
@@ -5006,7 +5046,7 @@ header {
 }
 
 .slider__slide:last-child {
-    margin-right: 0;
+    margin-right: 0 !important;
 }
 
 .recommended_slider_buy {
@@ -5049,6 +5089,16 @@ header {
 
 .slider_next {
     right: 0;
+}
+
+.product__img {
+    cursor: pointer;
+}
+
+.product__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* product */
