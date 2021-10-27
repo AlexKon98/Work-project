@@ -98,3 +98,10 @@ closed.addEventListener('click', () => {
 })
 
 // Мой код 
+
+let more = document.querySelector('.product_text_more');
+
+more.addEventListener('click', () => { 
+    document.querySelector('.product_text-hide').style.display = "block";
+    more.style.display = "none";
+});

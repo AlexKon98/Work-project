@@ -3863,13 +3863,13 @@ input[type="submit"] {
     background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
 }
 
-
 /*Poem Choice*/
 
 
 /*Learn*/
 
 .learn {
+    margin-top: -210px;
     height: 100vh;
     display: flex;
     align-items: center;
