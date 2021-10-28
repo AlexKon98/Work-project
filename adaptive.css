@@ -1,0 +1,278 @@
+@media (max-width: 1199px) {
+    .menu-link-one {
+        order: 3;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .menu__same-line {
+        margin: 0;
+    }
+
+    .menu__logo {
+        margin-right: auto;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .menu__list {
+        max-width: 300px;
+    }
+    
+    .menu__social {
+        margin-right: 12px;
+    }
+
+    .menu__content-item {
+        display: none;
+    }
+
+    .menu__content {
+        justify-content: center;
+    }
+    
+    .menu__list {
+        margin-right: 0;
+    }
+
+    .menu__heading {
+        font-size: 22px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        max-width: 253px;
+    }
+
+    .accordion__item {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 300px;
+    }
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__footer__link:nth-child(2) {
+        margin: 0;
+    }
+
+    .menu__footer__link:nth-child(2) {
+        order: 2;
+    }
+
+    .menu__footer__link {
+        margin-bottom: 20px;
+    }
+
+    .footer_developer {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .menu__link-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu__link-img:nth-child(2) {
+        width: 45px;
+        height: 37px;
+    }
+
+    .menu__social-link {
+        width: 10px;
+        height: 10px;
+    }
+
+    .header_user {
+        flex-direction: row-reverse;
+    }
+
+    .menu__same-line {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header_basket {
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .header__menu_icon {
+        display: block;
+        margin-left: 30px;
+    }
+
+    .header_enter {
+        width: 26px;
+    }
+
+    .header_enter img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .header_basket img {
+        margin-right: 20px;
+    }
+
+    .header_crutch, .menu_img {
+        width: 40px;
+        height: 40px;
+        margin-right: auto;
+    }
+
+    .header_catalog,
+    .header_search,
+    .header_free {
+        display: none;
+    }
+
+    .header_content {
+        justify-content: start;
+    }
+
+    .menu__btn {
+        height: 30px;
+        background-color: #fff;
+    }
+
+    header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .faq__heading {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 0.01em;
+        margin-bottom: 50px;
+    }
+
+    .faq {
+        margin-top: -210px;
+    }
+
+    .faq__accordion__item {
+        width: 100%;
+        max-height: 55px;
+    }
+
+    .accordion__heading {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 15px 14px 15px 16px;
+    }
+
+    .accordion__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .faq__accordion__item-active {
+        max-height: 207px;
+    }
+
+    .faq__plus {
+        margin-left: 20px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .faq__plus::before, .faq__plus::after {
+        width: 15px;
+    }
+
+    .faq__plus::before {
+        top: 12px;
+        left: 4px;
+    }
+
+    .faq__plus::after {
+        left: 12px;
+        top: 12px;
+    }
+
+    .accordion__heading-active .faq__plus::before {
+        width: 15px;
+        top: 12px;
+        left: 4px;
+    }
+
+    .accordion__heading-active .faq__plus::after {
+        width: 15px;
+        left: 12px;
+        top: 12px;
+    }
+
+    .accordion__heading-active .faq__plus {
+        transform: rotate(-45deg);
+    }
+
+    .footer_contacts_btn, .footer_menu {
+        display: none;
+    }
+
+    .footer__hide {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .image {
+        width: 45px;
+        height: 40px;
+    }
+
+    .footer_bureaucracy {
+        flex-direction: column;
+    }
+
+    .footer__developer {
+        display: flex;
+    }
+
+    .footer_developer {
+        display: none;
+    }
+
+    .copyrights {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    .footer_bureaucracy_confidentiality {
+        margin-bottom: 34px;
+    }
+
+    .dev_img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 491px) {
+    .faq__accordion__item {
+        max-height: 74px;
+    }
+
+    .faq__accordion__item-active {
+        max-height: 207px;
+    }
+}
+
+@media (max-width: 470px) {
+    .faq__plus {
+        width: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .faq__plus {
+        width: 35px;
+    }
+}
