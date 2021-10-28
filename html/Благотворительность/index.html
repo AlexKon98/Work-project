@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../normalize.css">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../adaptive.css">
     <title>Благотворительность</title>
 </head>
 
@@ -31,12 +32,21 @@
                     <div class="header_enter">
                         <img src="../../img/user.svg" alt="">
                         <div class="nik_nik">
-                            Войти
+                            <span class="hide">Войти</span>
                         </div>
                     </div>
                     <div class="header_basket">
-                        <img src="../../img/handbag.svg" alt=""> Корзина пуста
+                        <img src="../../img/handbag.svg" alt=""> <span class="hide">Корзина пуста</span>
                     </div>
+                </div>
+                <div class="header__menu_icon">
+                    <button class="menu__btn">
+                        <svg width="32" height="24" viewbox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.9092H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 22.8184H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -61,6 +71,10 @@
     <footer>
         <div class="container">
             <div class="footer_content">
+                <div class="footer__hide">
+                    <div class="footer__img"><img src="../../img/menu.svg" alt=""></div>
+                    <div class="footer__btn">СВЯЗАТЬСЯ С НАМИ</div>
+                </div>
                 <div class="footer_block footer_menu">
                     <div>Подробнее о курсе</div>
                     <div>Каталог</div>
@@ -69,9 +83,9 @@
                     <div>Благотворительность</div>
                 </div>
                 <div class="footer_block footer_contacts">
-                    <img src="../../img/main_logo.png" alt="">
-                    <div>Attachments_nvstepan@mail.ru</div>
-                    <div class="footer_social">
+                    <img class="image" src="../../img/main_logo.png" alt="">
+                    <div class="hide">Attachments_nvstepan@mail.ru</div>
+                    <div class="footer_social hide">
                         <img src="../../img/telega.svg" alt="">
                         <img src="../../img/TikTok.svg" alt="">
                         <img src="../../img/VK.svg" alt="">
@@ -80,9 +94,16 @@
                         <img src="../../img/INST.svg" alt="">
                     </div>
                     <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
+                    <div class="footer__developer">
+                        <div class="inherit">
+                            <div>Разработка</div>
+                            <div>сайта:</div>
+                        </div>
+                        <img class="dev_img" src="../../img/SU_logo.svg" alt="">
+                    </div>
                 </div>
                 <div class="footer_block footer_bureaucracy">
-                    <div>
+                    <div class="copyrights">
                         <div>
                             Копирование информации запрещено
                         </div>
