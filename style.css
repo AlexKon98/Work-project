@@ -1037,12 +1037,38 @@ header {
     font-size: 16px;
     line-height: 20px;
     height: fit-content;
+    transition: left .4s ease-in-out;
 }
 
-.store_filter_search {
+.store_filter_search, .menu__filter_search {
     padding: 30px 30px 20px 30px;
     display: flex;
     align-items: center;
+}
+
+.menu__filter_search {
+    display: none;
+}
+
+.menu__special-btn {
+    display: none;
+}
+
+.menu__filter_search input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #CDE1FF;
+    color: #276F97;
+    width: 100%;
+}
+
+.menu__filter_search svg {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
 }
 
 .store_filter_ul {
@@ -1104,6 +1130,10 @@ header {
     padding-right: 30px;
     padding-top: 14px;
     padding-bottom: 14px;
+}
+
+.menu__close {
+    display: none;
 }
 
 .store_search_author input {
@@ -2077,6 +2107,7 @@ footer {
     font-size: 16px;
     line-height: 20px;
     color: #363636;
+    width: 100%;
 }
 
 /* .footer_bureaucracy div {} */
@@ -2103,6 +2134,7 @@ footer {
 
 .my-bonuses__heading {
     display: block;
+    position: relative;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 500;
@@ -2810,6 +2842,7 @@ a.ui-button:active,
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.02em;
+    margin-left: 16px;
 }
 
 .cookie__button:hover {
@@ -3157,6 +3190,7 @@ a.ui-button:active,
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    margin-top: -210px;
 }
 
 .sign-in__heading-low {
@@ -5019,7 +5053,7 @@ header {
 }
 
 .slider__slide {
-    width: 200px;
+    width: 200px !important;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -5083,6 +5117,7 @@ header {
 
 .product__img {
     cursor: pointer;
+    object-fit: cover;
 }
 
 .product__image {
@@ -5130,6 +5165,199 @@ header {
 .footer__btn:hover {
     background: linear-gradient(206.47deg, #7BC1E8 3.72%, #276F97 142.35%);
     box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.1), inset 0px -4px 4px rgba(91, 91, 91, 0.1);
+}
+
+
+.special__menu {
+    position: fixed;
+    display: none;
+    z-index: 15;
+    background-color: rgba(9, 17, 30, 0.5);;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.catalog_store_filter .store_filter_search input {
+    max-width: 180px !important;
+}
+
+.menu__nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 270px;
+    background-color: #fff;
+    padding: 30px;
+    display: block;
+    transition: right .4s ease-in-out;
+}
+
+.menu__iamge {
+    margin-bottom: 50px;
+}
+
+.menu__header_search {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.menu__header_search::after {
+    content: url(./img/search.svg);
+    position: absolute;
+    right: 22px;
+    top: 8px;
+}
+
+.menu__header_search input {
+    border: none;
+    background: #F1F5FC;
+    border-radius: 6px;
+    width: 100%;
+    color: #4A8AAD;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu__header_catalog {
+    text-align: right;
+    margin-bottom: 28px;
+}
+
+.menu__header_free {
+    background: #288FC8;
+    color: #fff;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu__header_free:hover {
+    background: linear-gradient(206.47deg, #7BC1E8 3.72%, #276F97 142.35%);
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.1), inset 0px -4px 4px rgba(91, 91, 91, 0.1);
+}
+
+.menu__svg {
+    width: 50px;
+    height: 50px;
+}
+
+.read__more {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #276F97;
+    text-decoration-line: underline;
+}
+
+.registration .js-validate-error-label {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.password__form .js-validate-error-label {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.sign-in__form .js-validate-error-label {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: none;
+}
+
+.description {
+    display: none;
+}
+
+.product_block_price-special, .product_block_price-through {
+    max-width: 125px;
+    border: 1.2px solid #C4C4C4;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 20px;
+}
+
+.product_block_price-through {
+    text-decoration-line: line-through;
+    color: #8E8E8E;
+}
+
+.flex-sale {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin-top: -100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sale-line {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8E8E8E;
+    margin-bottom: 8px;
+}
+
+.sale-date {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C84528;
+}
+
+.sale-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8E8E8E;
+}
+
+.shown, .choices {
+    display: none;
+}
+
+.count-orders {
+    display: block;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    top: 0;
+    left: 150px;
 }
 
 /*Active*/

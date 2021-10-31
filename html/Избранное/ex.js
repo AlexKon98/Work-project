@@ -1,9 +1,7 @@
-let bonuses_btns = document.querySelectorAll('.my-bonuses__link')
-let bonuses_li = document.querySelectorAll('.my-bonuses__item')
-let countHeart = document.querySelector('.my_bonuses_count')
-let bonusesTitle = document.querySelector('.my-bonuses__heading')
-
-
+let bonuses_btns = document.querySelectorAll('.my-bonuses__link');
+let bonuses_li = document.querySelectorAll('.my-bonuses__item');
+let countHeart = document.querySelector('.my_bonuses_count');
+let bonusesTitle = document.querySelector('.my-bonuses__heading');
 
 bonuses_li.forEach(li => {
     li.addEventListener('click', () => {
