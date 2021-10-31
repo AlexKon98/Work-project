@@ -8,6 +8,8 @@ let catalog = document.querySelector('.catalog_store_filter');
 let filter = document.querySelector('.menu__special-btn');
 let apply = document.querySelector('.store_filter_btn');
 let closed = document.querySelector('.menu__close');
+let catalogNew = document.querySelector('.catalog_store_filter');
+let filterNew = document.querySelector('.fixed');
 storeFilterBlock.forEach(block => {
     block.addEventListener('click', () => {
         if (block.querySelector('.store_filter_ul').clientHeight === 0) {
@@ -59,10 +61,13 @@ menuBtn.addEventListener('click', () => {
 })
 filter.addEventListener('click', () => {
     catalog.style.left = '0';
+    filterNew.style.display = 'block';
 })
 apply.addEventListener('click', () => {
     catalog.style.left = '-275px';
-}) 
+    filterNew.style.display = 'none';
+})
 closed.addEventListener('click', () => {
     catalog.style.left = '-275px';
+    filterNew.style.display = 'none';
 })

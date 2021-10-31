@@ -22,6 +22,7 @@ audio {
     display: none;
 }
 
+
 /* Убираем внутренние отступы */
 
 ul,
@@ -1040,7 +1041,8 @@ header {
     transition: left .4s ease-in-out;
 }
 
-.store_filter_search, .menu__filter_search {
+.store_filter_search,
+.menu__filter_search {
     padding: 30px 30px 20px 30px;
     display: flex;
     align-items: center;
@@ -1283,6 +1285,9 @@ header {
     border: 1px solid #F3F3F3;
     border-radius: 8px;
     padding: 16px 20px;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto
 }
 
 .products_block_img {
@@ -1925,6 +1930,7 @@ header {
     display: none;
 }
 
+
 /*Product*/
 
 
@@ -2110,6 +2116,7 @@ footer {
     width: 100%;
 }
 
+
 /* .footer_bureaucracy div {} */
 
 .footer_bureaucracy_confidentiality {
@@ -2121,6 +2128,7 @@ footer {
 .footer__developer {
     display: none;
 }
+
 
 /*Footer*/
 
@@ -3887,6 +3895,7 @@ input[type="submit"] {
     background: linear-gradient(175.34deg, #7BC1E8 -50.08%, #276F97 191.29%);
 }
 
+
 /*Poem Choice*/
 
 
@@ -3911,12 +3920,17 @@ input[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;   
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
 }
 
 .learn_header {
@@ -4631,6 +4645,7 @@ input[disabled] {
     box-shadow: inset 0px 4px 4px rgb(255 255 255 / 10%), inset 0px -4px 4px rgb(91 91 91 / 10%);
 }
 
+
 /* Стили для старта изучения стихов */
 
 
@@ -4644,6 +4659,7 @@ header {
     background-color: #FFF;
     z-index: 10;
 }
+
 
 /* Новые стили для фиксации header */
 
@@ -4660,7 +4676,9 @@ header {
     color: #006AA5;
 }
 
+
 /* basket */
+
 
 /* catalog */
 
@@ -4678,22 +4696,22 @@ header {
     margin: 0 auto 40px;
     position: relative;
     z-index: 40;
-  }
-  
-  .filter__block {
+}
+
+.filter__block {
     margin-bottom: 25px;
-  }
-  
-  .filter__block--slider {
+}
+
+.filter__block--slider {
     padding-left: 13px;
     padding-right: 13px;
-  }
-  
-  .filter__block--category {
+}
+
+.filter__block--category {
     margin-bottom: 10px;
-  }
-  
-  .filter__head {
+}
+
+.filter__head {
     padding-top: 10px;
     color: #4A4A4A;
     font-family: 'Montserrat', sans-serif;
@@ -4701,9 +4719,9 @@ header {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-  }
-  
-  .filter__head--category {
+}
+
+.filter__head--category {
     background: none;
     padding-top: 0;
     padding-bottom: 0;
@@ -4711,8 +4729,9 @@ header {
     height: auto;
     line-height: inherit;
     margin-bottom: 5px;
-  }
-  .filter__row {
+}
+
+.filter__row {
     font-weight: 600;
     display: block;
     cursor: pointer;
@@ -4720,38 +4739,39 @@ header {
     position: relative;
     margin: 0;
     line-height: 1.3;
-  }
-  
-  .filter__row input[type=checkbox] {
+}
+
+.filter__row input[type=checkbox] {
     display: none;
-  }
-  
-  .filter__row input[type=checkbox]:checked ~ .checkbox::after {
+}
+
+.filter__row input[type=checkbox]:checked~.checkbox::after {
     color: #7BC1E8;
     content: "\f374";
-  }
-  
-  .filter__row input[type=checkbox]:checked ~ .label {
+}
+
+.filter__row input[type=checkbox]:checked~.label {
     color: #7BC1E8;
-  }
-  
-  .filter__row input[type=checkbox]:checked ~ .sup {
+}
+
+.filter__row input[type=checkbox]:checked~.sup {
     color: #7BC1E8;
-  }
-  
-  .filter__row input[type=checkbox]:disabled ~ .checkbox::after {
+}
+
+.filter__row input[type=checkbox]:disabled~.checkbox::after {
     content: "\f372";
-  }
-  
-  .filter__row input[type=checkbox]:disabled ~ .label {
+}
+
+.filter__row input[type=checkbox]:disabled~.label {
     color: #bcbcbc;
     text-decoration: line-through;
-  }
-  
-  .filter__row input[type=checkbox]:disabled ~ .sup {
+}
+
+.filter__row input[type=checkbox]:disabled~.sup {
     color: #bcbcbc;
-  }
-  .filter__row .checkbox {
+}
+
+.filter__row .checkbox {
     height: 12px;
     width: 12px;
     position: absolute;
@@ -4759,9 +4779,9 @@ header {
     margin: 0;
     left: 13px;
     top: 7px;
-  }
-  
-  .filter__row .checkbox::after {
+}
+
+.filter__row .checkbox::after {
     font-family: "Ionicons";
     content: "\f372";
     position: absolute;
@@ -4771,47 +4791,47 @@ header {
     transform: translate(-50%, -50%);
     color: #a0a0a0;
     font-weight: 400;
-  }
-  
-  .filter__row .sup {
+}
+
+.filter__row .sup {
     position: absolute;
     width: 50px;
     text-align: left;
     right: 0;
     top: 6px;
-  }
-  
-  .filter__row:hover .label {
+}
+
+.filter__row:hover .label {
     color: #7BC1E8;
-  }
-  
-  .filter__row.unactive {
+}
+
+.filter__row.unactive {
     cursor: default;
-  }
-  
-  .filter__row--nosup .sup {
+}
+
+.filter__row--nosup .sup {
     opacity: 0;
-  }
-  
-  .filter__row--color .sup {
+}
+
+.filter__row--color .sup {
     border: 1px solid #f0f0f0;
     height: 14px !important;
     width: 14px !important;
     border-radius: 2px;
     overflow: hidden;
     right: 21px;
-  }
-  
-  .filter__body {
+}
+
+.filter__body {
     padding: 0;
     background: #ffffff;
-  }
-  
-  .filter__body button + button {
+}
+
+.filter__body button+button {
     margin-top: 15px;
-  }
-  
-  .filter__button {
+}
+
+.filter__button {
     display: block;
     width: 100%;
     text-align: left;
@@ -4828,9 +4848,9 @@ header {
     font-size: 0.875rem;
     cursor: pointer;
     margin: 0;
-  }
-  
-  .filter__button i {
+}
+
+.filter__button i {
     position: absolute;
     right: 10px;
     font-size: 0.875rem;
@@ -4838,29 +4858,29 @@ header {
     transform: translateY(-50%) rotate(180deg);
     transform-origin: 50% 50%;
     transition: transform 0.35s;
-  }
-  
-  .filter.is-active .filter__button i {
+}
+
+.filter.is-active .filter__button i {
     transform: translateY(-50%) rotate(0deg);
-  }
-  
-  .filter__cost {
+}
+
+.filter__cost {
     font-size: 0.75rem;
     font-weight: 600;
     color: #535353;
     font-family: "Exo 2 Condensed", sans-serif;
     text-transform: uppercase;
-  }
-  
-  .filter__cost .table-cell {
+}
+
+.filter__cost .table-cell {
     vertical-align: middle;
-  }
-  
-  .filter__cost .table-cell + .table-cell {
+}
+
+.filter__cost .table-cell+.table-cell {
     padding-left: 2px;
-  }
-  
-  .filter__cost input {
+}
+
+.filter__cost input {
     width: 44px;
     background: #f0f6f9;
     text-align: center;
@@ -4871,15 +4891,15 @@ header {
     font-size: 0.75rem;
     height: 30px;
     line-height: 28px;
-  }
-  
-  .filter__slider {
+}
+
+.filter__slider {
     padding-bottom: 20px;
     padding-top: 10px;
     max-width: 236px;
-  }
-  
-  .filter__more {
+}
+
+.filter__more {
     width: 100%;
     text-align: center;
     border-top: 1px solid #eaeaea;
@@ -4887,32 +4907,32 @@ header {
     font-weight: 400;
     margin-top: -20px;
     margin-bottom: 25px;
-  }
-  
-  .filter__more a {
+}
+
+.filter__more a {
     text-decoration: none;
-  }
-  
-  .filter__category {
+}
+
+.filter__category {
     margin-bottom: 25px;
-  }
-  
-  .ui-widget.ui-widget-content {
+}
+
+.ui-widget.ui-widget-content {
     border: 0;
     height: 3px;
     border-radius: 0;
     background: #e6e6e6;
     position: relative;
     max-width: 226px;
-  }
-  
-  .ui-slider-horizontal .ui-slider-range {
+}
+
+.ui-slider-horizontal .ui-slider-range {
     background: #7BC1E8;
     position: absolute;
     z-index: 11;
-  }
-  
-  .ui-slider .ui-slider-handle {
+}
+
+.ui-slider .ui-slider-handle {
     width: 0;
     height: 0;
     border: 0;
@@ -4923,15 +4943,16 @@ header {
     background-color: #fff;
     top: -6px;
     cursor: pointer;
-    z-index: 9; 
+    z-index: 9;
     position: absolute;
-  }
-  
-  .ui-slider .ui-slider-handle:focus {
+}
+
+.ui-slider .ui-slider-handle:focus {
     outline: none;
-  }
-  
-  .price-range-min, .price-range-max {
+}
+
+.price-range-min,
+.price-range-max {
     font-size: 0.625rem;
     color: #a9a9a9;
     position: absolute;
@@ -4942,57 +4963,62 @@ header {
     z-index: 10;
     background-color: #ffffff;
     display: block;
-  }
-  
-  .price-range-max, .price-range-min {
+}
+
+.price-range-max,
+.price-range-min {
     display: none;
-  }
-  
-  .range__zero {
+}
+
+.range__zero {
     font-size: 0.625rem;
     color: #a9a9a9;
     position: absolute;
     margin-top: 9px;
     z-index: 5;
-  }
-  
-  .ui-slider-horizontal .ui-slider-range {
+}
+
+.ui-slider-horizontal .ui-slider-range {
     background: #7BC1E8;
-  }
-  
-  .ui-slider-horizontal .ui-slider-range {
+}
+
+.ui-slider-horizontal .ui-slider-range {
     top: 0;
     height: 100%;
-  }
-  .ui-slider .ui-slider-range {
+}
+
+.ui-slider .ui-slider-range {
     position: absolute;
     z-index: 1;
     font-size: .7em;
     display: block;
     border: 0;
     background-position: 0 0;
-  }
-  
-  .ui-widget-header {
+}
+
+.ui-widget-header {
     border: 1px solid #7BC1E8;
     background-color: #7BC1E8;
     color: #222222;
     font-weight: bold;
-  }
-  
-  .flex {
+}
+
+.flex {
     display: flex;
     justify-content: space-between;
     max-width: 236px;
-  }
-  
-  #priceMin, #priceMax {
+}
+
+#priceMin,
+#priceMax {
     max-width: 100px;
     border: 1px solid #a0a0a0;
     border-radius: 4px;
-  }
+}
+
 
 /* catalor */
+
 
 /* product */
 
@@ -5030,7 +5056,7 @@ header {
     cursor: pointer;
 }
 
-.product__close{
+.product__close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -5050,6 +5076,7 @@ header {
 
 .slider__wrapper {
     height: 100%;
+    width: max-content;
 }
 
 .slider__slide {
@@ -5100,8 +5127,8 @@ header {
 
 .slider_prev-next {
     position: static;
-    width: 68px;
-    height: 68px;
+    width: 44px;
+    height: 44px;
     display: block;
     transform: none;
     opacity: 1 !important;
@@ -5125,6 +5152,7 @@ header {
     height: 100%;
     object-fit: cover;
 }
+
 
 /* product */
 
@@ -5167,12 +5195,12 @@ header {
     box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.1), inset 0px -4px 4px rgba(91, 91, 91, 0.1);
 }
 
-
 .special__menu {
     position: fixed;
     display: none;
     z-index: 15;
-    background-color: rgba(9, 17, 30, 0.5);;
+    background-color: rgba(9, 17, 30, 0.5);
+    ;
     top: 0;
     right: 0;
     bottom: 0;
@@ -5286,7 +5314,8 @@ header {
     display: none;
 }
 
-.product_block_price-special, .product_block_price-through {
+.product_block_price-special,
+.product_block_price-through {
     max-width: 125px;
     border: 1.2px solid #C4C4C4;
     border-radius: 5px;
@@ -5343,7 +5372,8 @@ header {
     color: #8E8E8E;
 }
 
-.shown, .choices {
+.shown,
+.choices {
     display: none;
 }
 
@@ -5359,6 +5389,18 @@ header {
     top: 0;
     left: 150px;
 }
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgba(9, 17, 30, 0.5);
+}
+
 
 /*Active*/
 

@@ -14,7 +14,6 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="../../normalize.css">
-    <link rel="stylesheet" href="../../choices.min.css">
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../adaptive.css">
 </head>
@@ -47,47 +46,47 @@
                 <div class="header_user header__user">
 
                     <div class="header_enter">
-                    <div class="header_enter_ava">
-                    <img src="../../img/nik_nik.jpg" alt="">
+                        <div class="header_enter_ava">
+                            <img src="../../img/nik_nik.jpg" alt="">
+                        </div>
+                        <div class="nik_nik">
+                            nik_nik
+                        </div>
+
+                        <div class="header_enter_menu">
+                            <div class="enter_menu_header">
+                                <div class="header_enter_ava">
+                                    <img class="ava" src="../../img/nik_nik.jpg" alt="">
+                                </div>
+                                <div class="nik_nik">
+                                    nik_nik
+                                </div>
+                            </div>
+                            <div class="enter_menu_ul">
+                                <div class="enter_menu_li">Мой профиль</div>
+                                <div class="enter_menu_li">
+                                    <div>
+                                        Приступить
+                                    </div>
+                                    <div>
+                                        к изучению стихов
+                                    </div>
+                                </div>
+                                <div class="enter_menu_li">Избранное</div>
+                                <div class="enter_menu_li">Мои заказы</div>
+                                <div class="enter_menu_li">Мои бонусы</div>
+                                <div class="enter_menu_li">Подписки</div>
+                            </div>
+                            <div class="enter_menu_exit">Выйти</div>
+                        </div>
                     </div>
-                    <div class="nik_nik">
-                    nik_nik
-                    </div>
-                    
-                    <div class="header_enter_menu">
-                    <div class="enter_menu_header">
-                    <div class="header_enter_ava">
-                    <img class="ava" src="../../img/nik_nik.jpg" alt="">
-                    </div>
-                    <div class="nik_nik">
-                    nik_nik
-                    </div>
-                    </div>
-                    <div class="enter_menu_ul">
-                    <div class="enter_menu_li">Мой профиль</div>
-                    <div class="enter_menu_li">
-                    <div>
-                    Приступить
-                    </div>
-                    <div>
-                    к изучению стихов
-                    </div>
-                    </div>
-                    <div class="enter_menu_li">Избранное</div>
-                    <div class="enter_menu_li">Мои заказы</div>
-                    <div class="enter_menu_li">Мои бонусы</div>
-                    <div class="enter_menu_li">Подписки</div>
-                    </div>
-                    <div class="enter_menu_exit">Выйти</div>
-                    </div>
-                    </div>
-                    
+
                     <div class="header_basket">
-                    <img src="../../img/handbag.svg" alt="">
-                    <div class="shown"></div>
-                    <div class="hide"><span id="count">2</span> товара <span>1356 ₽</span> </div>
+                        <img src="../../img/handbag.svg" alt="">
+                        <div class="shown"></div>
+                        <div class="hide"><span id="count">2</span> товара <span>1356 ₽</span> </div>
                     </div>
-                    </div>
+                </div>
                 <div class="header__menu_icon">
                     <button class="menu__btn">
                         <svg width="32" height="24" viewbox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +103,9 @@
     <main class="main">
         <section class="my-bonuses">
             <div class="container">
-                <h2 class="my-bonuses__heading">Заказы <div class="count-orders">48</div></h2>
+                <h2 class="my-bonuses__heading">Заказы
+                    <div class="count-orders">48</div>
+                </h2>
                 <div class="my-bonuses__flex">
 
 
@@ -143,22 +144,6 @@
                         </ul>
                     </div>
 
-                    <select name="select" id="select" class="select-block">
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                        <option value="" class="select-block__option">Все</option>
-                      </select>
-                      <script src="choices.min.js"></script>
-                      <script>
-                        const element = document.querySelector('#select');
-                        const choices = new Choices(element, {
-                          searchEnabled: false
-                        });
-                      </script>
 
                     <div class="my-bonuses__content">
 
