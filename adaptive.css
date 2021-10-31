@@ -1026,6 +1026,25 @@
         line-height: 15px;
         left: 100px;
     }
+
+    .favorites_empty_title {
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .favorites_empty_subtitle {
+        max-width: 235px;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: end;
+    }
+
+    .favorites_empty button {
+        padding: 20px 40px;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 491px) {
