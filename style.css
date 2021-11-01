@@ -5454,6 +5454,14 @@ header {
     position: relative;
 }
 
+.mobil {
+    display: none;
+}
+
+.learn_five_progress {
+    display: flex;
+}
+
 
 /*Active*/
 

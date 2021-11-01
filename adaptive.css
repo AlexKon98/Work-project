@@ -129,9 +129,9 @@
     .header_free {
         display: none;
     }
-    .header_content {
+    /* .header_content {
         justify-content: start;
-    }
+    } */
     .menu__btn {
         position: relative;
         z-index: 17;
@@ -1148,6 +1148,7 @@
     }
     .header_start {
         text-align: center;
+        margin: 0 auto;
     }
     .catalog {
         padding-top: 50px;
