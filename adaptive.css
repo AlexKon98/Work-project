@@ -866,9 +866,6 @@
         line-height: 17px;
     }
     /*Mobil step*/
-    .mobil {
-        display: block;
-    }
     .header_content {
         margin-top: 30px;
     }
@@ -923,7 +920,7 @@
         justify-content: center;
         margin-bottom: 40px;
     }
-    .desktop {
+    .learn .header_start {
         display: none;
     }
     .learn_header_prosent {
@@ -1108,7 +1105,8 @@
     .mobile {
         display: block;
     }
-    .header_content .header_catalog {
+    .header_content .header_catalog,
+    .learn .header_catalog {
         display: block;
     }
     .start_header .header_content {
@@ -1212,6 +1210,12 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+    }
+    .mobil {
+        display: block !important;
+    }
+    .choice {
+        margin-top: -89px;
     }
 }
 

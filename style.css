@@ -5462,6 +5462,10 @@ header {
     display: flex;
 }
 
+.choice {
+    margin-top: -210px;
+}
+
 
 /*Active*/
 
