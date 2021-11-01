@@ -5401,6 +5401,59 @@ header {
     background-color: rgba(9, 17, 30, 0.5);
 }
 
+.link {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.link::after {
+    position: absolute;
+    content: url(img/link.svg);
+    display: block;
+    top: 16px;
+    right: 16px;
+}
+
+.mobile {
+    display: none;
+}
+
+.catalog__choice {
+    display: none;
+}
+
+.preview_slider {
+    background-color: transparent;
+}
+
+.details_img_mobail {
+    display: none;
+}
+
+.benefit_blocks_carousel {
+    display: none !important;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+}
+
+.reviews_block {
+    margin: 0;
+}
+
+.reviews_block_media {
+    background-color: transparent;
+}
+
+.reviews_blocks_carousel {
+    position: relative;
+}
+
+.reviews_block_ava {
+    position: relative;
+}
+
 
 /*Active*/
 

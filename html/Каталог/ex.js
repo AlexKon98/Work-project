@@ -10,6 +10,7 @@ let apply = document.querySelector('.store_filter_btn');
 let closed = document.querySelector('.menu__close');
 let catalogNew = document.querySelector('.catalog_store_filter');
 let filterNew = document.querySelector('.fixed');
+
 storeFilterBlock.forEach(block => {
     block.addEventListener('click', () => {
         if (block.querySelector('.store_filter_ul').clientHeight === 0) {

@@ -1,38 +1,38 @@
 import * as THREE from './three.module.js';
-import {OrbitControls} from './OrbitControls.js';
+import { OrbitControls } from './OrbitControls.js';
 
 if (typeof textureUrl !== "undefined") {
 
     let camera, scene, renderer, cylinder, controls;
-    
-    const height = 500;
-    const width = 500;
+
+    const height = document.getElementById('carousel-3D').clientWidth;
+    const width = document.getElementById('carousel-3D').clientWidth;
 
     init(textureUrl);
 
     function init(url) {
 
-        camera = new THREE.PerspectiveCamera( 70, height / width, 0.01, 2000 );
+        camera = new THREE.PerspectiveCamera(70, height / width, 0.01, 2000);
         camera.position.z = 620;
 
         scene = new THREE.Scene();
 
-        const geometry = new THREE.CylinderGeometry( 317, 317, 416, 50 );
+        const geometry = new THREE.CylinderGeometry(317, 317, 416, 50);
         const loader = new THREE.TextureLoader();
-            loader.load(url, (texture) => {
+        loader.load(url, (texture) => {
             const material = new THREE.MeshBasicMaterial({
                 map: texture,
             });
             material.transparent = true;
-            cylinder = new THREE.Mesh( geometry, material );
-            scene.add( cylinder );
+            cylinder = new THREE.Mesh(geometry, material);
+            scene.add(cylinder);
 
-            renderer = new THREE.WebGLRenderer( { antialias: true, alpha: true } );
-            renderer.setSize( height, width );
-            renderer.setAnimationLoop( animation );
-            document.getElementById('carousel-3D').appendChild( renderer.domElement );
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(height, width);
+            renderer.setAnimationLoop(animation);
+            document.getElementById('carousel-3D').appendChild(renderer.domElement);
 
-            controls = new OrbitControls( camera, renderer.domElement );
+            controls = new OrbitControls(camera, renderer.domElement);
             controls.autoRotate = true;
             controls.autoRotateSpeed = 2;
             controls.minPolarAngle = Math.PI / 2;
@@ -53,13 +53,13 @@ if (typeof textureUrl !== "undefined") {
         });
     }
 
-    function animation( time ) {
+    function animation(time) {
 
         controls.update();
-        renderer.render( scene, camera );
+        renderer.render(scene, camera);
 
     }
-    
+
     let timer = null;
 
     function rotate() {
@@ -69,8 +69,8 @@ if (typeof textureUrl !== "undefined") {
             clearTimeout(timer);
         }
 
-        timer = setTimeout(function() {
+        timer = setTimeout(function () {
             controls.autoRotate = true;
-        }, 10000);      
+        }, 10000);
     }
 }

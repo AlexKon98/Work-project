@@ -12,11 +12,28 @@
 
 
     <title>Document</title>
+    <link rel="stylesheet" href="../../normalize.css">
+    <link rel="stylesheet" href="../../owl.carousel.min.css">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../adaptive.css">
 </head>
 
 <body>
     <header>
+        <div class="special__menu">
+            <div class="menu__nav">
+                <div class="menu__iamge">
+                    <img class="menu__svg" src="../../img/menu.svg" alt="">
+                </div>
+                <div>
+                    <div class="menu__header_catalog">Каталог</div>
+                    <div class="menu__header_search">
+                        <input placeholder="Поиск" type="text">
+                    </div>
+                    <div class="menu__header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header_content">
                 <div class="menu_img"><img src="../../img/menu.svg" alt=""></div>
@@ -30,12 +47,21 @@
                     <div class="header_enter">
                         <img src="../../img/user.svg" alt="">
                         <div class="nik_nik">
-                            Войти
+                            <span class="hide">Войти</span>
                         </div>
                     </div>
                     <div class="header_basket">
-                        <img src="../../img/handbag.svg" alt=""> Корзина пуста
+                        <img src="../../img/handbag.svg" alt=""> <span class="hide">Корзина пуста</span>
                     </div>
+                </div>
+                <div class="header__menu_icon">
+                    <button class="menu__btn">
+                        <svg width="32" height="24" viewbox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.9092H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 22.8184H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -46,7 +72,9 @@
             <div class="container">
                 <div class="preview_content">
                     <div id="carousel-3D" class="preview_slider">
-                        <script>const textureUrl = '../../img/autors.png';</script>
+                        <script>
+                            const textureUrl = '../../img/autors.png';
+                        </script>
                         <script type="module" src="./js/carousel-3D.js"></script>
                     </div>
                     <div class="preview_text">
@@ -71,92 +99,90 @@
                     <div class="reviews_title">Отзывы</div>
                     <div class="reviews_blocks">
                         <div class="reviews_blocks_left"> <img src="../../img/arrow_left.svg" alt=""></div>
-                        <div class="reviews_blocks_window">
-                            <div class="reviews_blocks_carousel">
-                                <div class="reviews_block">
-                                    <img class="reviews_block_ava" src="../../img/ava_1.jpg" alt="">
-                                    <div class="reviews_block_name">
-                                        Маря
-                                        <img src="../../img/inst_small.svg" alt="">
-                                    </div>
-                                    <div class="reviews_block_kid">Света 7 лет</div>
-                                    <div class="reviews_block_media">
-                                        <img src="../../img/kid_photo_1.jpg" alt="">
-                                    </div>
-                                    <div class="reviews_block_review">
-                                        <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
-                                    </div>
-                                    <div class="reviews_block_footer">
-                                        Подробнее
-                                    </div>
+                        <div class="reviews_blocks_carousel owl-carousel">
+                            <div class="reviews_block">
+                                <img class="reviews_block_ava" src="../../img/ava_1.jpg" alt="">
+                                <div class="reviews_block_name">
+                                    Маря
+                                    <img src="../../img/inst_small.svg" alt="">
                                 </div>
-                                <div class="reviews_block">
-                                    <img class="reviews_block_ava" src="../../img/ava_2.jpg" alt="">
-                                    <div class="reviews_block_name">
-                                        Анастасия
-                                        <img src="../../img/inst_small.svg" alt="">
-                                    </div>
-                                    <div class="reviews_block_kid">Света 10 лет</div>
-                                    <div class="reviews_block_media">
-                                        <img src="../../img/kid_photo_2.jpg" alt="">
-                                    </div>
-                                    <div class="reviews_block_review">
-                                        <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
-                                    </div>
-                                    <div class="reviews_block_footer">
-                                        Подробнее
-                                    </div>
+                                <div class="reviews_block_kid">Света 7 лет</div>
+                                <div class="reviews_block_media">
+                                    <img src="../../img/kid_photo_1.jpg" alt="">
                                 </div>
-                                <div class="reviews_block">
-                                    <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
-                                    <div class="reviews_block_name">
-                                        Дарья
-                                        <img src="../../img/inst_small.svg" alt="">
-                                    </div>
-                                    <div class="reviews_block_kid">Света 12 лет</div>
-                                    <div class="reviews_block_media">
-                                        <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="reviews_block_review">
-                                        <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
-                                    </div>
-                                    <div class="reviews_block_footer">
-                                        Подробнее
-                                    </div>
+                                <div class="reviews_block_review">
+                                    <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
                                 </div>
-                                <div class="reviews_block">
-                                    <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
-                                    <div class="reviews_block_name">
-                                        Дарья
-                                        <img src="../../img/inst_small.svg" alt="">
-                                    </div>
-                                    <div class="reviews_block_kid">Света 12 лет</div>
-                                    <div class="reviews_block_media">
-                                        <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="reviews_block_review">
-                                        <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
-                                    </div>
-                                    <div class="reviews_block_footer">
-                                        Подробнее
-                                    </div>
+                                <div class="reviews_block_footer">
+                                    Подробнее
                                 </div>
-                                <div class="reviews_block">
-                                    <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
-                                    <div class="reviews_block_name">
-                                        Дарья
-                                        <img src="../../img/inst_small.svg" alt="">
-                                    </div>
-                                    <div class="reviews_block_kid">Света 12 лет</div>
-                                    <div class="reviews_block_media">
-                                        <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="reviews_block_review">
-                                        <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
-                                    </div>
-                                    <div class="reviews_block_footer">
-                                        Подробнее
-                                    </div>
+                            </div>
+                            <div class="reviews_block">
+                                <img class="reviews_block_ava" src="../../img/ava_2.jpg" alt="">
+                                <div class="reviews_block_name">
+                                    Анастасия
+                                    <img src="../../img/inst_small.svg" alt="">
+                                </div>
+                                <div class="reviews_block_kid">Света 10 лет</div>
+                                <div class="reviews_block_media">
+                                    <img src="../../img/kid_photo_2.jpg" alt="">
+                                </div>
+                                <div class="reviews_block_review">
+                                    <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
+                                </div>
+                                <div class="reviews_block_footer">
+                                    Подробнее
+                                </div>
+                            </div>
+                            <div class="reviews_block">
+                                <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
+                                <div class="reviews_block_name">
+                                    Дарья
+                                    <img src="../../img/inst_small.svg" alt="">
+                                </div>
+                                <div class="reviews_block_kid">Света 12 лет</div>
+                                <div class="reviews_block_media">
+                                    <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="reviews_block_review">
+                                    <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
+                                </div>
+                                <div class="reviews_block_footer">
+                                    Подробнее
+                                </div>
+                            </div>
+                            <div class="reviews_block">
+                                <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
+                                <div class="reviews_block_name">
+                                    Дарья
+                                    <img src="../../img/inst_small.svg" alt="">
+                                </div>
+                                <div class="reviews_block_kid">Света 12 лет</div>
+                                <div class="reviews_block_media">
+                                    <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="reviews_block_review">
+                                    <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
+                                </div>
+                                <div class="reviews_block_footer">
+                                    Подробнее
+                                </div>
+                            </div>
+                            <div class="reviews_block">
+                                <img class="reviews_block_ava" src="../../img/ava_3.jpg" alt="">
+                                <div class="reviews_block_name">
+                                    Дарья
+                                    <img src="../../img/inst_small.svg" alt="">
+                                </div>
+                                <div class="reviews_block_kid">Света 12 лет</div>
+                                <div class="reviews_block_media">
+                                    <iframe src="https://www.youtube.com/embed/Hhbi2qkK1yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="reviews_block_review">
+                                    <span>Потрясающий результат!</span> Каждый родитель понимает, как важно учить стихотворения. Но сам процесс заучивания превращался в кошмар. Решили попробовать учить стихи по
+                                </div>
+                                <div class="reviews_block_footer">
+                                    Подробнее
                                 </div>
                             </div>
                         </div>
@@ -176,6 +202,7 @@
                             Учим стихи просто!
                         </div>
                         <div class="details_problems">
+                            <img src="../../img/ava_1.jpg" class="details_img_mobail" alt="">
                             <p>В школе многие дети сталкиваются с <span>проблемами заучивания стихов наизусть</span> и это превращается в настоящую пытку, как для них, так и для их родителей.</p>
                             <p>Мы предлагаем вам решение, в виде отлично зарекомендовавший себя для заучивания текстовой информации – комбинированной мнемотехники.</p>
                         </div>
@@ -194,11 +221,13 @@
                         <div>Запоминание информации при помощи <span>одной вербальной памяти,</span> (которая отвечает за запоминание текстов, стихов, докладов) <span>сопряжено с трудностями,</span> так как запомнить чистый текст крайне сложно, ведь в работе
                             участвует только левое полушарие головного мозга.</div>
                         <div><span>Мнемотехника</span> поможет запомнить текст благодаря образам, которые представлены на картинках, и тут будет включаться невербальная память, за которую отвечает правое полушарие головного мозга. В итоге при работе с мнемотехникой
-                            ребенок будет <span>развивать сразу два вида памяти,</span> что приводит к впечатляющему результату.</div>
+                            ребенок будет <span>развивать сразу два вида памяти,</span> что приводит к впечатляющему результату.
+                        </div>
                         <div>Принцип методики заключается в том, что на каждое слово или фразу представлена картинка, которая помогает принять информацию <span>сразу двум органам чувств</span> – зрительному и слуховому, что повышает качество запоминания и
                             воспроизведения текста.
                         </div>
-                        <div>Этот метод запоминания <span>особенно эффективен для детей с речевой патологией.</span></div>
+                        <div>Этот метод запоминания <span>особенно эффективен для детей с речевой патологией.</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,7 +293,8 @@
                     <div class="benefit_blocks">
                         <div class="benefit_block">
                             <div class="benefit_block_number">1</div>
-                            <div class="benefit_block_text">Развивается культура речи. Речь становиться более развитой и колоритной.</div>
+                            <div class="benefit_block_text">Развивается культура речи. Речь становиться более развитой и колоритной.
+                            </div>
                         </div>
                         <div class="benefit_block">
                             <div class="benefit_block_number">2</div>
@@ -280,19 +310,51 @@
                         </div>
                         <div class="benefit_block">
                             <div class="benefit_block_number">5</div>
-                            <div class="benefit_block_text">Стихи учат презентовать себя. Рассказывая стихи в кругу друзей и знакомых, ребенок получает отличную возможность потренировать навык публичных выступлений.</div>
+                            <div class="benefit_block_text">Стихи учат презентовать себя. Рассказывая стихи в кругу друзей и знакомых, ребенок получает отличную возможность потренировать навык публичных выступлений.
+                            </div>
                         </div>
                         <div class="benefit_block">
                             <div class="benefit_block_number">6</div>
-                            <div class="benefit_block_text">Стихи учат ребенка доводить дело до конца. Исследования показывают, что ребенок, который нашел в себе силы заучить до конца несколько стихотворений, с большей долей вероятности сумеет найти силы закончить любое начатое дело.</div>
+                            <div class="benefit_block_text">Стихи учат ребенка доводить дело до конца. Исследования показывают, что ребенок, который нашел в себе силы заучить до конца несколько стихотворений, с большей долей вероятности сумеет найти силы закончить любое начатое дело.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefit_blocks_carousel owl-carousel">
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">1</div>
+                            <div class="benefit_block_text">Развивается культура речи. Речь становиться более развитой и колоритной.
+                            </div>
+                        </div>
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">2</div>
+                            <div class="benefit_block_text">Увеличивается способность к запоминанию информации. Происходит тренировка памяти.</div>
+                        </div>
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">3</div>
+                            <div class="benefit_block_text">Развивается эмоциональный интеллект. Запоминая стихотворение, ребенок пропускает его через себя, а вместе с ним и всю палитру оттенков различных эмоций.</div>
+                        </div>
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">4</div>
+                            <div class="benefit_block_text">Мировосприятие ребенка становится ярким и образным, улучшается гибкость мышления, которое помогает в повседневных делах и в творчестве, развивается воображение.</div>
+                        </div>
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">5</div>
+                            <div class="benefit_block_text">Стихи учат презентовать себя. Рассказывая стихи в кругу друзей и знакомых, ребенок получает отличную возможность потренировать навык публичных выступлений.
+                            </div>
+                        </div>
+                        <div class="benefit_block">
+                            <div class="benefit_block_number">6</div>
+                            <div class="benefit_block_text">Стихи учат ребенка доводить дело до конца. Исследования показывают, что ребенок, который нашел в себе силы заучить до конца несколько стихотворений, с большей долей вероятности сумеет найти силы закончить любое начатое дело.
+                            </div>
                         </div>
                     </div>
                     <div class="benefit_output">
                         <div class="benefit_output_text">
                             <p>Как вы увидели польза от заучивания стихов очень существенная и необходимая для гармоничного развития ребенка. </p>
-                            <p> <span>Бродский,</span> который заставлял своих студентов учить стихи, говорил, что каждое выученное наизусть стихотворение вы можете считать своим, будто сами его написали.</p>
+                            <p> <span>Бродский,</span> который заставлял своих студентов учить стихи, говорил, что каждое выученное наизусть стихотворение вы можете считать своим, будто сами его написали.
+                            </p>
                         </div>
-                        <div class="benefit_output_img">IMG</div>
+                        <img class="benefit_output_img">IMG</img>
                     </div>
                 </div>
             </div>
@@ -370,6 +432,10 @@
     <footer>
         <div class="container">
             <div class="footer_content">
+                <div class="footer__hide">
+                    <div class="footer__img"><img src="../../img/menu.svg" alt=""></div>
+                    <div class="footer__btn">СВЯЗАТЬСЯ С НАМИ</div>
+                </div>
                 <div class="footer_block footer_menu">
                     <div>Подробнее о курсе</div>
                     <div>Каталог</div>
@@ -378,9 +444,9 @@
                     <div>Благотворительность</div>
                 </div>
                 <div class="footer_block footer_contacts">
-                    <img src="../../img/main_logo.png" alt="">
-                    <div>Attachments_nvstepan@mail.ru</div>
-                    <div class="footer_social">
+                    <img class="image" src="../../img/main_logo.png" alt="">
+                    <div class="hide">Attachments_nvstepan@mail.ru</div>
+                    <div class="footer_social hide">
                         <img src="../../img/telega.svg" alt="">
                         <img src="../../img/TikTok.svg" alt="">
                         <img src="../../img/VK.svg" alt="">
@@ -389,9 +455,16 @@
                         <img src="../../img/INST.svg" alt="">
                     </div>
                     <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
+                    <div class="footer__developer">
+                        <div class="inherit">
+                            <div>Разработка</div>
+                            <div>сайта:</div>
+                        </div>
+                        <img class="dev_img" src="../../img/SU_logo.svg" alt="">
+                    </div>
                 </div>
                 <div class="footer_block footer_bureaucracy">
-                    <div>
+                    <div class="copyrights">
                         <div>
                             Копирование информации запрещено
                         </div>
@@ -412,6 +485,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='./js/owl.carousel.min.js'></script>
     <script src='./js/ex.js'></script>
 </body>
 

@@ -14,12 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../normalize.css">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../adaptive.css">
     <title>Мои бонусы</title>
 </head>
 
 <body>
 
     <header>
+        <div class="special__menu">
+            <div class="menu__nav">
+                <div class="menu__iamge">
+                    <img class="menu__svg" src="../../img/menu.svg" alt="">
+                </div>
+                <div>
+                    <div class="menu__header_catalog">Каталог</div>
+                    <div class="menu__header_search">
+                        <input placeholder="Поиск" type="text">
+                    </div>
+                    <div class="menu__header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header_content">
                 <div class="menu_img"><img src="../../img/menu.svg" alt=""></div>
@@ -29,7 +44,7 @@
                     <input placeholder="Поиск" type="text">
                 </div>
                 <div class="header_free">ПОПРОБОВАТЬ БЕСПЛАТНО</div>
-                <div class="header_user">
+                <div class="header_user header__user">
 
                     <div class="header_enter">
                         <div class="header_enter_ava">
@@ -42,7 +57,7 @@
                         <div class="header_enter_menu">
                             <div class="enter_menu_header">
                                 <div class="header_enter_ava">
-                                    <img src="../../img/nik_nik.jpg" alt="">
+                                    <img class="ava" src="../../img/nik_nik.jpg" alt="">
                                 </div>
                                 <div class="nik_nik">
                                     nik_nik
@@ -69,8 +84,18 @@
 
                     <div class="header_basket">
                         <img src="../../img/handbag.svg" alt="">
-                        <div>2 товара <span>1356 ₽</span> </div>
+                        <div class="shown"></div>
+                        <div class="hide"><span id="count">2</span> товара <span>1356 ₽</span> </div>
                     </div>
+                </div>
+                <div class="header__menu_icon">
+                    <button class="menu__btn">
+                        <svg width="32" height="24" viewbox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11.9092H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 1H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 22.8184H31" stroke="#276F97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -137,14 +162,16 @@
                     <div class="ref__menu">
                         <div class="ref__text-input">
                             <div class="ref__link">Реферальная ссылка</div>
-                            <img src="../../img/link.svg" alt="">
                         </div>
-                        <input type="text" value="https://vk.com/doc423645031е" class="ref__input" disabled>
+                        <div class="link">
+                            <input type="text" value="https://vk.com/doc423645031е" class="ref__input" disabled>
+                        </div>
                         <div class="ref__text-input">
                             <div class="ref__link">Реферальный код для друга</div>
-                            <img src="../../img/link.svg" alt="">
                         </div>
-                        <input type="text" value="НАТАЛЬЯ10024" class="ref__input" disabled>
+                        <div class="link">
+                            <input type="text" value="НАТАЛЬЯ10024" class="ref__input" disabled>
+                        </div>
                         <div class="ref__text-input">
                             <div class="ref__link">Вставить код</div>
                         </div>
@@ -166,6 +193,12 @@
                         <div class="ref__bonus">1 бонус = 1 рублю.</div>
                     </div>
                     <img src="../../img/charity-test-img.jpg" alt="" class="ref__img">
+                    <div class="your-bonuses__content mobile">
+                        <p class="your-bonuses__text">Все бонусы начисляются на следующий день после совершения покупки.</p>
+                        <p class="your-bonuses__text">Бонусы можно использовать только для получения скидки, обменять их на деньги нельзя!</p>
+                        <p class="your-bonuses__text">Потратить бонусы можно при оформлении заказа, выбрав соответствующий тип оплаты «оплатить бонусами».</p>
+                        <p class="your-bonuses__text">Бонусы на счёте действуют 6 месяцев с даты зачисления, использовать их можно в любое удобное вам время в течение этого периода.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -174,7 +207,7 @@
                 <div class="your-bonuses__flex">
                     <img src="../../img/charity-test-img.jpg" alt="" class="your-bonuses__img">
                     <div class="your-bonuses__item">
-                        <div class="your-bonuses__content">
+                        <div class="your-bonuses__content hide">
                             <p class="your-bonuses__text">Все бонусы начисляются на следующий день после совершения покупки.</p>
                             <p class="your-bonuses__text">Бонусы можно использовать только для получения скидки, обменять их на деньги нельзя!</p>
                             <p class="your-bonuses__text">Потратить бонусы можно при оформлении заказа, выбрав соответствующий тип оплаты «оплатить бонусами».</p>
@@ -206,7 +239,7 @@
                             </li>
                             <li class="your-bonuses__main-item">
                                 <div class="your__bonuses__bonus">А почему бы и нет 05.06.2021 1:50</div>
-                                <div class="your__bonuses__price agree">- 1450 ₽</div>
+                                <div class="your__bonuses__price alert">- 1450 ₽</div>
                             </li>
                         </ul>
                         <ul class="swipe-content-active" data-target="3">
@@ -234,7 +267,7 @@
                             </li>
                             <li class="your-bonuses__main-item">
                                 <div class="your__bonuses__bonus">А почему бы и нет 05.06.2021 1:50</div>
-                                <div class="your__bonuses__price agree">- 1450 ₽</div>
+                                <div class="your__bonuses__price alert">- 1450 ₽</div>
                             </li>
                         </ul>
                         <div>
@@ -263,6 +296,10 @@
     <footer>
         <div class="container">
             <div class="footer_content">
+                <div class="footer__hide">
+                    <div class="footer__img"><img src="../../img/menu.svg" alt=""></div>
+                    <div class="footer__btn">СВЯЗАТЬСЯ С НАМИ</div>
+                </div>
                 <div class="footer_block footer_menu">
                     <div>Подробнее о курсе</div>
                     <div>Каталог</div>
@@ -271,9 +308,9 @@
                     <div>Благотворительность</div>
                 </div>
                 <div class="footer_block footer_contacts">
-                    <img src="../../img/main_logo.png" alt="">
-                    <div>Attachments_nvstepan@mail.ru</div>
-                    <div class="footer_social">
+                    <img class="image" src="../../img/main_logo.png" alt="">
+                    <div class="hide">Attachments_nvstepan@mail.ru</div>
+                    <div class="footer_social hide">
                         <img src="../../img/telega.svg" alt="">
                         <img src="../../img/TikTok.svg" alt="">
                         <img src="../../img/VK.svg" alt="">
@@ -282,9 +319,16 @@
                         <img src="../../img/INST.svg" alt="">
                     </div>
                     <div class="footer_contacts_btn">СВЯЗАТЬСЯ С НАМИ</div>
+                    <div class="footer__developer">
+                        <div class="inherit">
+                            <div>Разработка</div>
+                            <div>сайта:</div>
+                        </div>
+                        <img class="dev_img" src="../../img/SU_logo.svg" alt="">
+                    </div>
                 </div>
                 <div class="footer_block footer_bureaucracy">
-                    <div>
+                    <div class="copyrights">
                         <div>
                             Копирование информации запрещено
                         </div>
