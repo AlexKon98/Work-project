@@ -881,7 +881,9 @@ header {
 }
 
 .benefit_output_img {
-    flex-basis: 20%;
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
     background: grey;
 }
 
@@ -1494,6 +1496,7 @@ header {
 
 .block_delivery_body {
     padding-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1533,8 +1536,8 @@ header {
 }
 
 .delivery_body_ava {
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 100px;
     background: #EBEBEB;
     border-radius: 2px;
     overflow: hidden;
@@ -1542,6 +1545,12 @@ header {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
+}
+
+.delivery_body_ava img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .delivery_body_name {
@@ -2273,20 +2282,25 @@ footer {
 .order_day_imgs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .order_day_img {
     background: #EBEBEB;
     border-radius: 2px;
-    width: 100px;
-    height: 80px;
+    width: 80px;
+    height: 100px;
     margin-left: 8px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
+}
+
+.order_day_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .order_day_title {
@@ -2299,6 +2313,7 @@ footer {
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    cursor: pointer;
 }
 
 .order_day_header span {
@@ -2862,7 +2877,7 @@ a.ui-button:active,
 /* Стили для формы подписок */
 
 .subscription {
-    position: absolute;
+    position: fixed;
     display: flex;
     top: 0;
     bottom: 0;
@@ -2871,7 +2886,7 @@ a.ui-button:active,
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 10;
+    z-index: 20;
 }
 
 .subscription__form {
@@ -3847,7 +3862,7 @@ input[type="submit"] {
     line-height: 145%;
     color: #696969;
     padding: 17px 32px;
-    width: 45%;
+    width: 60%;
 }
 
 .header_start_task {
@@ -4188,11 +4203,12 @@ input[type="submit"] {
 }
 
 .learn_four_block {
-    width: calc((100% - 60px) / 4);
+    width: calc((100% - 25px) / 4);
 }
 
 .learn_block_img {
-    height: 150px;
+    width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4203,6 +4219,8 @@ input[type="submit"] {
 
 .learn_block_img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .learn_block_text {
@@ -4273,7 +4291,7 @@ input[type="submit"] {
 }
 
 .learn_five_block {
-    width: calc((100% - 60px) / 4);
+    width: calc((100% - 25px) / 4);
 }
 
 .learn_block_closed {
@@ -5216,7 +5234,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 270px;
+    width: 300px;
     background-color: #fff;
     padding: 30px;
     display: block;
@@ -5254,6 +5272,12 @@ header {
 
 .menu__header_catalog {
     text-align: right;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #4A8AAD;
     margin-bottom: 28px;
 }
 
@@ -5462,8 +5486,22 @@ header {
     display: flex;
 }
 
+.learn_five_progress.mobil {
+    display: none;
+}
+
 .choice {
     margin-top: -210px;
+}
+
+.footer__special-line {
+    display: none;
+}
+
+.same-line-spec {
+    font-weight: 600 !important;
+    font-size: 16px;
+    line-height: 17px;
 }
 
 
@@ -5499,6 +5537,10 @@ header {
 .personal_area__link_active,
 .get_ready__link_active {
     color: #006AA5;
+}
+
+.home_list {
+    overflow-x: hidden;
 }
 
 

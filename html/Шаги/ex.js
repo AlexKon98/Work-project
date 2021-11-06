@@ -1,5 +1,17 @@
-var canvas = document.getElementById('diagram');
-var ctx = canvas.getContext('2d');
+function modileBlock() {
+    if (window.innerWidth < window.innerHeight) {
+        document.getElementById('modile_block').style.display = 'block';
+    } else {
+        document.getElementById('modile_block').style.display = 'none';
+    }
+}
+
+modileBlock();
+
+window.addEventListener("resize", modileBlock, false);
+
+var canvas = document.getElementsByClassName('diagram');
+var ctx = canvas[0].getContext('2d');
 
 let correct_arr = [
     [0, '0%'],
@@ -26,7 +38,7 @@ ctx.textAlign = "center";
 ctx.fillText(correct_arr[0][1], 40, 45);
 
 let five_progress = (index) => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas[0].width, canvas[0].height);
     ctx.beginPath();
     ctx.strokeStyle = '#DDDDDD'
     ctx.lineWidth = 14
@@ -43,9 +55,6 @@ let five_progress = (index) => {
     ctx.textAlign = "center";
     ctx.fillText(correct_arr[index][1], 40, 45);
 }
-
-
-
 
 let poem_one = [
     [
@@ -153,6 +162,7 @@ batnFurther.addEventListener('click', () => {
             document.querySelector('.learn_header_prosent').classList.add('my_bonuses_count_active')
         }
         document.querySelector(`.${learn[lists]}`).classList.add('learn_step')
+        window.scrollTo(0, 0)
     }
 })
 
@@ -190,12 +200,14 @@ let examination = () => {
 }
 
 
+let cur_img_block = null,
+    cur_text_block = null;
+
 five_contents.forEach(Img_text => {
     let img_block = Img_text.querySelector('.learn_block_img')
     let text_block = Img_text.querySelector('.learn_block_text')
     img_block.ondragover = (e) => { e.preventDefault() }
     text_block.ondragover = (e) => { e.preventDefault() }
-
 
     img_block.ondrop = (e) => {
         if (e.dataTransfer.getData('src')) {
@@ -208,12 +220,41 @@ five_contents.forEach(Img_text => {
 
     img_block.ondragstart = (e) => {
         five_img = img_block
+        console.log(e);
         e.dataTransfer.setData('src', img_block.innerHTML)
+    }
+
+    img_block.ontouchstart = (e) => {
+        if (!cur_img_block) {
+            cur_img_block = img_block
+            img_block.classList.add('active')
+        } else {
+            let buffer = img_block.innerHTML
+            img_block.innerHTML = cur_img_block.innerHTML
+            cur_img_block.innerHTML = buffer
+            cur_img_block.classList.remove('active')
+            cur_img_block = null
+            examination()
+        }
     }
 
     text_block.ondragstart = (e) => {
         five_text = text_block
         e.dataTransfer.setData('textt', text_block.innerHTML)
+    }
+
+    text_block.ontouchstart = (e) => {
+        if (!cur_text_block) {
+            cur_text_block = text_block
+            text_block.classList.add('active')
+        } else {
+            let buffer = text_block.innerHTML
+            text_block.innerHTML = cur_text_block.innerHTML
+            cur_text_block.innerHTML = buffer
+            cur_text_block.classList.remove('active')
+            cur_text_block = null
+            examination()
+        }
     }
 
     text_block.ondrop = (e) => {

@@ -8,6 +8,7 @@ let menuBtn = document.querySelector('.menu__btn');
 let catalog = document.querySelector('.catalog_store_filter');
 let catalogNew = document.querySelector('.catalog_store_filter');
 let filterNew = document.querySelector('.fixed');
+let apply = document.querySelector('.store_filter_btn');
 
 storeFilterBlock.forEach(block => {
     block.addEventListener('click', () => {
@@ -54,9 +55,7 @@ closed.addEventListener('click', () => {
     filterNew.style.display = 'none';
 })
 
-// document.querySelector(".store_filter_price input").oninput = function() {
-//     var value = (this.value - this.min) / (this.max - this.min) * 100
-//     this.style.background = 'linear-gradient(to right, #5DA6CF 0%, #5DA6CF ' + value + '%, #E8E8E8 ' + value + '%, #E8E8E8 100%)'
-//     filterPriceSelect.style.left = `calc(${value + '%'} - ${filterPriceSelect.offsetWidth /3.5 + 'px'})`
-//     filterPriceSelect.innerText = `${this.value + ' ₽'}`
-// }
+apply.addEventListener('click', () => {
+    catalog.style.left = '-275px';
+    filterNew.style.display = 'none';
+})

@@ -5,8 +5,8 @@ if (typeof textureUrl !== "undefined") {
 
     let camera, scene, renderer, cylinder, controls;
 
-    const height = document.getElementById('carousel-3D').clientWidth;
-    const width = document.getElementById('carousel-3D').clientWidth;
+    let height = document.getElementById('carousel-3D').clientWidth;
+    let width = document.getElementById('carousel-3D').clientWidth;
 
     init(textureUrl);
 
@@ -50,6 +50,20 @@ if (typeof textureUrl !== "undefined") {
             controls.update();
 
             renderer.domElement.addEventListener('pointerdown', rotate, false);
+
+            window.addEventListener('resize', onWindowResize, false);
+
+            function onWindowResize() {
+
+                height = document.getElementById('carousel-3D').clientWidth;
+                width = document.getElementById('carousel-3D').clientWidth;
+
+                camera.aspect = width / height;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize(width, height);
+
+            }
         });
     }
 
@@ -73,4 +87,6 @@ if (typeof textureUrl !== "undefined") {
             controls.autoRotate = true;
         }, 10000);
     }
+
+
 }
